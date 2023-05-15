@@ -22,7 +22,7 @@
 <script src="{{ "js/jquery.navgoco.min.js" }}"></script>
 
 <!-- for mathjax support -->
-{% if page.usemathjax %}
+{% unless page.usemathjax == false %}
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       extensions: ["tex2jax.js"],
@@ -40,8 +40,9 @@
       }
       });
   </script>
-  <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-{% endif %}
+  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+{% endunless %}
+
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

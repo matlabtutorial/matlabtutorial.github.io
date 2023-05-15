@@ -4,7 +4,7 @@ keywords: sample homepage
 tags: [getting_started]
 sidebar: false
 permalink: index.html
-usemathjax: true
+identifier: 20230515
 ---
 
 {% include note.html content="All comments and opinions expressed on MATLAB for Everyone are mine alone and do not necessarily reflect those of my employers, past or present." %}
