@@ -1,0 +1,35 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: MATLAB Tutorial
+  version: 1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: 시작하기에 앞서
+    output: web, pdf
+    folderitems:
+
+    - title: MATLAB을 사용하는 이유
+      url: /matlab_basics_why_use_matlab.html
+      output: web, pdf
+      type: homepage
+    - title: MATLAB 설치하기
+      url: /matlab_basics_how_to_install_matlab.html
+      output: web, pdf
+      type: homepage
+
+# Copyright 2021 Google LLC
