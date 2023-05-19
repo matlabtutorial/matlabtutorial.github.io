@@ -1,0 +1,2 @@
+load(websave('myFile', 'https://github.com/matlabtutorial/matlabtutorial.github.io/raw/main/mat_files/matlab_basics/1.%20matlab_basics/2.%20working_with_command_and_script/my_matfile.mat'))
+plot(year1, price1);
