@@ -12,7 +12,7 @@ h = [h1, h2, h3];
 
 [~, icons] = legend(h,'LGD 1', 'LGD 2', 'LGD 3');
 
-% Type은 line이면서 Marker는 없지는 않는 것을 찾아야 함.
+% Type은 line이면서 Marker는 없지는 않는 것을 찾아야 함!
 icons = findobj(icons,'Type','line','-not','Marker','none'); 
 
 set(icons, 'Markersize',12)
