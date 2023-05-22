@@ -3,8 +3,8 @@
 topnav:
 - title: Topnav
   items:
-    - title: GitHub
-      external_url: https://github.com/matlabtutorial/matlabtutorial.github.io
+#    - title: GitHub
+#      external_url: https://github.com/matlabtutorial/matlabtutorial.github.io
     - title: Blog
       url: /blog
 

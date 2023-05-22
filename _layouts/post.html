@@ -29,6 +29,12 @@ layout: default
         {% include toc.html %}
         {% endunless %}
 
+        {% unless page.startnote == false %}
+        <div>
+        {% include note.html content="All comments and opinions expressed on &quot;MATLAB for everyone&quot; are mine alone and do not necessarily reflect those of my employers, past or present." %}
+        </div>
+        {% endunless %}
+        
         {{ content }}
     </div>
 
