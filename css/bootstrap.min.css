@@ -91,7 +91,7 @@ sub,
 sup {
     position: relative;
     font-size: 75%;
-    line-height: 0;
+    line-height: 10;
     vertical-align: baseline
 }
 

@@ -22,14 +22,89 @@ entries:
   - title: 시작하기에 앞서
     output: web, pdf
     folderitems:
-
     - title: MATLAB을 사용하는 이유
-      url: /matlab_basics_why_use_matlab.html
+      url: /1. matlab_basics_why_use_matlab.html
       output: web, pdf
       type: homepage
     - title: MATLAB 설치하기
-      url: /matlab_basics_how_to_install_matlab.html
+      url: /2. matlab_basics_how_to_install_matlab.html
       output: web, pdf
       type: homepage
 
-# Copyright 2021 Google LLC
+  - title: 기본 분석 작업 수행하기
+    output: web, pdf
+    folderitems:
+    - title: MATLAB UI 이용하기
+      url: /1. working_with_MATLAB_UI.html
+      output: web, pdf
+      type: homepage
+    - title: 명령어와 스크립트 이용하기
+      url: /2. working_with_command_and_script.html
+      output: web, pdf
+      type: homepage
+
+  - title: 변수 다루기
+    output: web, pdf
+    folderitems:
+    - title: 변수란 무엇인가?
+      url: /1. what_are_variables.html
+      output: web, pdf
+      type: homepage
+    - title: 벡터 다루기
+      url: /2. vectors.html
+      output: web, pdf
+      type: homepage
+    - title: 행렬 다루기
+      url: /3. matrices.html
+      output: web, pdf
+      type: homepage
+    - title: logical 타입 다루기
+      url: /4. logicals.html
+      output: web, pdf
+      type: homepage
+    - title: 문자형 다루기
+      url: /5. strings.html
+      output: web, pdf
+      type: homepage
+    - title: 서로 다른 타입의 데이터 관리
+      url: /6. cell_struct_table.html
+      output: web, pdf
+      type: homepage
+    - title: 시간 데이터 다루기
+      url: /7. time_data.html
+      output: web, pdf
+      type: homepage
+      
+  - title: 그래픽스
+    output: web, pdf
+    folderitems:
+    - title: 2차원 그래프 그리기
+      url: /1. plot2d.html
+      output: web, pdf
+      type: homepage
+    - title: 3차원 그래프 그리기
+      url: /2. plot3d.html
+      output: web, pdf
+      type: homepage
+    - title: 그래픽스 객체 다루기
+      url: /3. graphics_objects.html
+      output: web, pdf
+      type: homepage
+    - title: 컬러, 폰트, 수식
+      url: /4. color_fonts_equations.html
+      output: web, pdf
+      type: homepage
+    - title: 그래프를 그림 파일로 저장하기
+      url: /5. save_figures.html
+      output: web, pdf
+      type: homepage
+    - title: 애니메이션 만들기
+      url: /6. animations.html
+      output: web, pdf
+      type: homepage
+    - title: 대화형 방식 컨트롤과 콜백
+      url: /7. interactive_control_and_callbacks.html
+      output: web, pdf
+      type: homepage
+
+# Copyright by Angelo Yeo

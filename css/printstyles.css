@@ -34,7 +34,6 @@ a[href*="mailto"]::after, a[data-toggle="tooltip"]::after, a[href].noCrossRef::a
     font-family: sans-serif;
     font-style:none;
     color: gray;
-
 }
 
 .printTitle {
