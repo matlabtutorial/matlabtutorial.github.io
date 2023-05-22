@@ -46,7 +46,7 @@ Visual Studio 설정과 관련된 내용은 StackOverflow Question 중 하나인
 (3) Visual Studio를 켜고 C/C++을 위한 project를 생성하자. 그리고 project의 Property를 열어보자.
 
 <p align = "center">
-  <img src = "https://raw.githubusercontent.com/angeloyeo/angeloyeo.github.io/master/pics/2022-06-20-calling_MATLAB_in_C/pic1.jpg">
+  <img src = "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/master/images/blog_posts/2022-06-20-calling_MATLAB_in_C/pic1.jpg">
   <br>
   그림 1. Project의 Property
 </p>
@@ -54,7 +54,7 @@ Visual Studio 설정과 관련된 내용은 StackOverflow Question 중 하나인
 (4) 64-bit MATLAB을 구동한다면 "Configuration Manager"를 열고 active solution platform이 "x64"로 설정되어 있는지 확인하자.
 
 <p align = "center">
-  <img src = "https://raw.githubusercontent.com/angeloyeo/angeloyeo.github.io/master/pics/2022-06-20-calling_MATLAB_in_C/pic2.jpg">
+  <img src = "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/master/images/blog_posts/2022-06-20-calling_MATLAB_in_C/pic2.jpg">
   <br>
   그림 2. 64 bit 매트랩을 사용한다면 꼭 64비트 platform에서 C코드가 동작할 수 있도록 확인하자
 </p>
@@ -64,7 +64,7 @@ Visual Studio 설정과 관련된 내용은 StackOverflow Question 중 하나인
 C:\Program Files\MATLAB\R2021b\bin\win64
 
 <p align = "center">
-  <img src = "https://raw.githubusercontent.com/angeloyeo/angeloyeo.github.io/master/pics/2022-06-20-calling_MATLAB_in_C/pic3.jpg">
+  <img src = "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/master/images/blog_posts/2022-06-20-calling_MATLAB_in_C/pic3.jpg">
   <br>
   그림 3. Library directory path
 </p>
@@ -76,7 +76,7 @@ C:\Program Files\MATLAB\R2021b\extern\include
 이 경로를 C/C++ > General > Additional Include Directories에 넣어주자.
 
 <p align = "center">
-  <img src = "https://raw.githubusercontent.com/angeloyeo/angeloyeo.github.io/master/pics/2022-06-20-calling_MATLAB_in_C/pic4.jpg">
+  <img src = "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/master/images/blog_posts/2022-06-20-calling_MATLAB_in_C/pic4.jpg">
   <br>
   그림 4. "engine.h" Header 파일의 경로 추가
 </p>
@@ -88,7 +88,7 @@ C:\Program Files\MATLAB\R2021b\extern\lib\win64\microsoft
 이 경로를 Linker > General > Additional Library Directories에 추가해주자.
 
 <p align = "center">
-  <img src = "https://raw.githubusercontent.com/angeloyeo/angeloyeo.github.io/master/pics/2022-06-20-calling_MATLAB_in_C/pic5.jpg">
+  <img src = "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/master/images/blog_posts/2022-06-20-calling_MATLAB_in_C/pic5.jpg">
   <br>
   그림 5. Linker 파일 경로 추가
 </p>
@@ -96,7 +96,7 @@ C:\Program Files\MATLAB\R2021b\extern\lib\win64\microsoft
 (8) 또 앞서 언급한 *.lib 파일들을 아래와 같이 Linker > Input에 추가해주자.
 
 <p align = "center">
-  <img src = "https://raw.githubusercontent.com/angeloyeo/angeloyeo.github.io/master/pics/2022-06-20-calling_MATLAB_in_C/pic6.jpg">
+  <img src = "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/master/images/blog_posts/2022-06-20-calling_MATLAB_in_C/pic6.jpg">
   <br>
   그림 6. Linker 파일 경로 추가
 </p>
@@ -107,7 +107,7 @@ C:\Program Files\MATLAB\R2021b\extern\lib\win64\microsoft
 아래의 C/C++ 코드를 이용하면 cosine 함수를 C/C++에서 계산하고 MATLAB에서 plot 해줄 수 있다.
 
 <p align = "center">
-  <img src = "https://raw.githubusercontent.com/angeloyeo/angeloyeo.github.io/master/pics/2022-06-20-calling_MATLAB_in_C/pic7.jpg">
+  <img src = "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/master/images/blog_posts/2022-06-20-calling_MATLAB_in_C/pic7.jpg">
   <br>
   그림 7. C 코드를 이용해 MATLAB을 호출하여 cosine 함수를 plot하는 예시
 </p>
