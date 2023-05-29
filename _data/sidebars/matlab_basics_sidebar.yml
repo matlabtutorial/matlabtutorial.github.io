@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: MATLAB Tutorial
-  version: 1.0
+  product: MATLAB Basics(KR)
+  version:
   folders:
 
   - title:
@@ -106,5 +106,11 @@ entries:
       url: /7. interactive_control_and_callbacks.html
       output: web, pdf
       type: homepage
-
+  - title: 제어문 
+    output: web, pdf
+    folderitems:
+    - title: 조건문
+      url: /1. conditional.html
+      output: web, pdf
+      type: homepage
 # Copyright by Angelo Yeo
