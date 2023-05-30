@@ -113,4 +113,8 @@ entries:
       url: /1. conditional.html
       output: web, pdf
       type: homepage
+    - title: 반복문
+      url: /2. looping.html
+      output: web, pdf
+      type: homepage
 # Copyright by Angelo Yeo
