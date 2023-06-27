@@ -10,6 +10,8 @@ comments: false
 <div class="home">
 
     <div class="post-list">
+	        <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">Blog RSS{{tag}}</a></p>
+
         {% for post in site.posts limit:10 %}
 
 
@@ -24,7 +26,6 @@ comments: false
 
         {% endfor %}
 
-        <p><a href="feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
 
 <hr />
         <p>See more posts from the <a href="blog_archive.html">Blog Archive</a>. </p>
