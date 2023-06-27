@@ -5,6 +5,8 @@ topnav:
   items:
 #    - title: GitHub
 #      external_url: https://github.com/matlabtutorial/matlabtutorial.github.io
+    - title: News
+      url: /news.html
     - title: Blog
       url: /blog
 

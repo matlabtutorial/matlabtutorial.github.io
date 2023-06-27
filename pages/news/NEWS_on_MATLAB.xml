@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml_lang="en-US">
+    <title>NEWS on MATLAB</title>
+    <updated>2023-06-27T11:26:54.295Z</updated>
+    <entry>
+        <id></id>
+        <published>2023-06-27T10:25:17.704Z</published>
+        <updated>2023-06-27T10:25:17.707Z</updated>
+        <link rel="alternate" type="text/html" href="https://blogs.mathworks.com/matlab/2023/06/26/matlab-kernel-for-jupyter-now-with-windows-support/?from=kr"/>
+        <title>MATLAB kernel for Jupyter – Now with Windows support</title>
+        <content>MATLAB 커널이 Jupyter 노트북에서 Windows에서 작동하지 않던 문제가 해결되었습니다. 이제는 Windows 기기에서도 JupyterLab과 MATLAB 커널 패키지를 설치하여 사용할 수 있습니다.</content>
+        <author>
+            <name></name>
+            <uri></uri>
+        </author>
+    </entry>
+    <entry>
+        <id></id>
+        <published>2023-06-16T00:00:00.000Z</published>
+        <updated>2023-06-16T00:00:00.000Z</updated>
+        <link rel="alternate" type="text/html" href="https://kr.mathworks.com/support/requirements/apple-silicon.html"/>
+        <title>MATLAB on Apple Silicon Macs</title>
+        <content>하반기에 출시될 R2023b 버전 부터는 Apple Silicon Mac에서 MATLAB이 로제타 없이 native로 돌아갈 수 있게 된다고 하네요!</content>
+        <author>
+            <name></name>
+            <uri></uri>
+        </author>
+    </entry>
+</feed>
