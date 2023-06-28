@@ -3,7 +3,7 @@ title: MATLAB으로 email 보내기
 published: true
 permalink: email_with_MATLAB.html
 summary: "MATLAB에서 Email을 보내는 방법과 실습"
-tags: [blog]
+tags: [웹]
 identifier: email_with_MATLAB
 sidebar: false
 toc: true

@@ -2,7 +2,7 @@
 title: legend의 마커사이즈 키우기
 published: true
 permalink: enlarge_markers_in_legend.html
-tags: [blog]
+tags: [시각화]
 identifier: enlarge_markers_in_legend
 sidebar: false
 toc: true

@@ -3,7 +3,7 @@ title: 【번역】【MATLAB】행렬 안의 특정 원소가 몇 개인지 세�
 published: true
 permalink: count_unique_element_in_matrix.html
 summary: "내장 함수를 이용해 행렬 안의 원소의 개수를 더 빠르게 셀 수 있다."
-tags: [blog]
+tags: [번역, 행렬]
 identifier: count_unique_element_in_matrix
 sidebar: false
 toc: true

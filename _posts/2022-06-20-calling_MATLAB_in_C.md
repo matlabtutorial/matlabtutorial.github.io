@@ -3,7 +3,7 @@ title: C에서 MATLAB 호출하기
 published: true
 permalink: calling_MATLAB_in_C.html
 summary: "C에서 MATLAB Engine을 구동하기 위해 필요한 환경 세팅과 C 코드 실습."
-tags: [blog]
+tags: [외부 언어 인터페이스]
 identifier: calling_MATLAB_in_C
 sidebar: false
 toc: true

@@ -3,7 +3,7 @@ title: 데이터 브러싱과 데이터 링킹
 published: true
 permalink: data_brushing_and_data_linking.html
 summary: "시각적으로 데이터들을 선택하고 데이터 간 연관성을 찾을 수 있는 직관적인 방법"
-tags: [blog]
+tags: [데이터, 시각화]
 identifier: data_brushing_and_data_linking
 sidebar: false
 toc: true

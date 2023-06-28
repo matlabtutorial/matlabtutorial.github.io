@@ -3,7 +3,7 @@ title: 【번역】【MATLAB】무슨 일이 일어나고 있는지 모르지만
 published: true
 permalink: abnormal_operation_of_MATLAB.html
 summary: "예상치 못한 매트랩/시뮬링크의 비정상 동작을 해결할 수 있는 간단 코맨드 솔루션!"
-tags: [blog]
+tags: [번역, 환경설정, 경로]
 identifier: abnormal_operation_of_MATLAB
 sidebar: false
 toc: true

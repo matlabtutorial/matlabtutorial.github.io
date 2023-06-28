@@ -3,7 +3,7 @@ title: VBA에서 MATLAB 호출하기
 published: true
 permalink: calling_MATLAB_in_VBA.html
 summary: "VBA를 이용해 MATLAB을 호출하는 방법과 실습"
-tags: [blog]
+tags: [외부 언어 인터페이스]
 identifier: calling_MATLAB_in_VBA
 sidebar: false
 toc: true

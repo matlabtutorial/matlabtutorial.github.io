@@ -3,7 +3,7 @@ title: MATLAB의 TCP/IP 통신
 published: true
 permalink: tcpip_in_MATLAB.html
 summary: "MATLAB에서 TCIP/IP 통신을 수행하기 위한 세팅과 실습"
-tags: [blog]
+tags: [통신]
 identifier: tcpip_in_MATLAB
 sidebar: false
 toc: true
