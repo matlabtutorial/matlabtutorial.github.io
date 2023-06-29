@@ -8,7 +8,7 @@ identifier: auto_ppt_slide_with_template
 sidebar: false
 toc: true
 ---
-
+ 
 본 포스트의 원문은 아래의 URL에서 확인하실 수 있습니다. 본 포스트는 원작자에게 동의를 구한 뒤 한국어로 번역하였습니다.
 
 - [【MATLAB】テンプレート使って PowerPoint スライド作成自動化：MATLAB Report Generator 編](https://qiita.com/eigs/items/cb48fdcd741126d09def)
