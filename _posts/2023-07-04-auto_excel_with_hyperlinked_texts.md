@@ -2,7 +2,7 @@
 title: 【번역】【MATLAB】하이퍼링크가 붙은 텍스트가 포함된 엑셀 자동화
 published: true
 permalink: auto_excel_with_hyperlinked_texts.html
-summary: "변수를 스크립트에 저장하면 mat, xlsx 등에서 파일로 불러오지 않더라도 곧바로 변수를 생성해 사용할 수 있다."
+summary: "엑셀에 하이퍼링크를 붙인채로 텍스트를 출력하는 방법에 대해 알아보자."
 tags: [번역, Excel, QiitaAPI, 자동화]
 identifier: auto_excel_with_hyperlinked_texts
 sidebar: false
