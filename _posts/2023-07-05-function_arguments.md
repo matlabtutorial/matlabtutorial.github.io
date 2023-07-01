@@ -232,6 +232,24 @@ options.Position (1,4) {mustBeNumeric,mustBeNonzero} = get(0, 'DefaultFigurePosi
 
 Live Editor에서 사용할 경우 이렇게 표시됩니다. 이게 직접 만든 함수라도 가능해집니다.
 
+<img src = "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-05-function_arguments/argument_in_livescript.png">
 
+위의 예에서는 기대한 입력 인수가 무엇인지, 디폴트 값 설정이 있는 경우에는 "선택 사항"(옵션)이라는 표시까지도 나오게 됩니다.
 
-위의 예에서는 기대한 입력 인수가 무엇인지, 디폴트 값 설정이 있는 경우에는 "옵션"이라는 표시까지도 나오게 됩니다.
+# Name-Value Pair (옵션)을 추가
+
+함수 시랳ㅇ 시 사용하는 옵션 설정입니다. 특별히 용도는 없지만 ... `'Method'`도 취할 수 있도록 해보겠습니다.
+
+```matlab
+function c = myFunction(a,b,options)
+
+arguments
+    a (1,1) {mustBeInteger(a),mustBePositive(a)} = 1
+    b = 2
+    options.Method {mustBeMember(options.Method,{'linear','spline'})} = 'linear'
+end
+
+c = a+b;
+disp(options.Method);
+end
+```
