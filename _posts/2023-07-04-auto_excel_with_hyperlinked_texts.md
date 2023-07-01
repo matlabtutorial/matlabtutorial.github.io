@@ -1,5 +1,5 @@
 ---
-title: 【번역】【MATLAB】하이퍼링크가 붙은 텍스트가 포함된 엑셀 자동화
+title: (번역) 하이퍼링크가 붙은 텍스트가 포함된 엑셀 자동화
 published: true
 permalink: auto_excel_with_hyperlinked_texts.html
 summary: "엑셀에 하이퍼링크를 붙인채로 텍스트를 출력하는 방법에 대해 알아보자."

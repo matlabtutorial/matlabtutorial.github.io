@@ -1,5 +1,5 @@
 ---
-title: 【번역】【MATLAB】무슨 일이 일어나고 있는지 모르지만 치명적인 오류를 해결하는 방법
+title: (번역) 무슨 일이 일어나고 있는지 모르지만 치명적인 오류를 해결하는 방법
 published: true
 permalink: abnormal_operation_of_MATLAB.html
 summary: "예상치 못한 매트랩/시뮬링크의 비정상 동작을 해결할 수 있는 간단 코맨드 솔루션!"

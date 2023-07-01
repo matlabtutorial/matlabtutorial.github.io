@@ -1,5 +1,5 @@
 ---
-title: 【번역】【MATLAB】변수를 스크립트에 저장하는 방법
+title: (번역) 변수를 스크립트에 저장하는 방법
 published: true
 permalink: saving_variables_in_script.html
 summary: "변수를 스크립트에 저장하면 mat, xlsx 등에서 파일로 불러오지 않더라도 곧바로 변수를 생성해 사용할 수 있다."

@@ -1,5 +1,5 @@
 ---
-title: 【번역】【MATLAB】파워포인트 슬라이드를 자동으로 만드는 방법
+title: (번역) 파워포인트 슬라이드를 자동으로 만드는 방법
 published: true
 permalink: auto_ppt_slide.html
 summary: "MATLAB 코드를 이용해 파워포인트 슬라이드를 작성하는 방법에 대하여"

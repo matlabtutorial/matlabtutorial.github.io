@@ -1,5 +1,5 @@
 ---
-title: 【번역】【MATLAB】템플릿을 이용해서 파워포인트 슬라이드를 자동으로 만드는 방법 - Report Generator 편
+title: (번역) 템플릿을 이용해서 파워포인트 슬라이드를 자동으로 만드는 방법 - Report Generator 편
 published: true
 permalink: auto_ppt_slide_with_template.html
 summary: "MATLAB 코드를 이용해 파워포인트 슬라이드를 작성할 때 템플릿을 이용하면 글이나 사진등의 위치를 미리 조정해둘 수 있어 편리하다. 이 때 Report Geneartor 기능을 이용할 수 있다."
