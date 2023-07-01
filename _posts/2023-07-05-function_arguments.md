@@ -49,7 +49,7 @@ MathWorks의 브로그에서도 몇 가지 사용예시가 소개되어 있기 �
 와 같으며, 네 가지의 요소가 있습니다. 입력인수명 (`inputArg`)와 그 뒤에,
 
 * 상정된 변수의 배열 크기 (Size)
-* double 형인가 어떤가 등의 클래스 이름 (Class)
+* double 형인지 어떤지 같은 클래스 이름 (Class)
 * 그리고 검증에 사용하는 함수 (Functions)
 
 그리고 마지막으로 `defaultValue` 기본값을 설정합니다. 전부 쓸 필요는 없고 필요한 것만 쓰면 OK입니다.
@@ -182,7 +182,7 @@ arguments
     (중략)
 ```
 
-라고 열심히 (직접) 써서 사용하고 있고 `mustBeTimeInput`, `mustBeVariableLabels`는 직접 만든 검증용 함수입니다. `setDefaultTime`은 디폴트 값을 설정하는 함수로 만들었습니다.
+라고 열심히 써서 사용하고 있고, `mustBeTimeInput`, `mustBeVariableLabels`는 직접 만든 검증용 함수입니다. `setDefaultTime`은 디폴트 값을 설정하는 함수로 만들었습니다.
 
 각각의 함수는 여기 ([Link to GitHub](https://github.com/minoue-xx/BarChartRaceAnimation/tree/master/function/private))에 있습니다만, 예를 들면 `mustBeTimeInput`을 보게 되면,
 
@@ -253,3 +253,30 @@ c = a+b;
 disp(options.Method);
 end
 ```
+
+`options.Method`라는 형태로 취한 것은 함수 입력시에 Name-Value pairs (옵션)로써 리스트가 나오게 됩니다.
+
+<img src=  "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-05-function_arguments/argument_in_livescript_option.png">
+
+이 기능에서 개인적으로 마음에 들었던 것은, `mustBeMember`를 사용하는 경우입니다. `Method`는 `liner` 혹은 `spline` 밖에 안됩니다라고 검증하고 있습니다만, 이것이 검증할 때 뿐만 아니라 함수에 입력을 넣을 때에도 활약하게 됩니다.
+
+<img src=  "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-05-function_arguments/argument_in_livescript_option2.png">
+
+라고 하고 있는 것 처럼, 'Method'에서 요구하고 있는 것은 이것뿐입니다 라고 명시해주고 있습니다.
+
+거기다, 위에서 소개한 `barChartRace.m`은 이런 느낌입니다.
+
+<img src=  "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-05-function_arguments/barChartArgumentOptions.png">
+
+# 마무리
+
+Arguments를 사용해서 디폴트 인수 설정의 방법부터 입력값의 검증까지 소개해보았습니다.
+
+"음, 솔직히 내가 사용하고 있는 함수에서 필요한 것은 아니지..."라고 생각합니다. 그러나, **1주일 전의 내가 만든 코드는 더 이상 내가 만든 코드가 아닌 셈이니까요.** 다른 사람에게도 사용해주셨으면 하는 게 있습니다. 에러의 원인을 필사적으로 찾은 결과 입력값의 상정이 잘못되었다는 것 뿐이라면 너무 슬플것 같으니까요.
+
+물론 R2019a 이전에도 똑같은 것이 가능하지만, Arguments를 사용한 방법과 비교하면 힘든 편입니다.
+
+* [마음에 드는 R2019b 신기능 - 입력 인수 검증](https://blogs.mathworks.com/japan-community/2019/11/05/favorite-r2019b-feature/?s_eid=PSM_29435&from=kr)
+* [입력인수 검증 ~ 숨겨진 편리한 기능](https://blogs.mathworks.com/japan-community/2019/11/27/function-arguments-part2/?s_eid=PSM_29435&from=kr)
+
+에서는 예전의 방법과 비교도 하고 있으므로 흥미가 있으신 분들은 부디 확인 바랍니다.
