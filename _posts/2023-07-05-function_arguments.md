@@ -238,7 +238,7 @@ Live Editor에서 사용할 경우 이렇게 표시됩니다. 이게 직접 만�
 
 # Name-Value Pair (옵션)을 추가
 
-함수 시랳ㅇ 시 사용하는 옵션 설정입니다. 특별히 용도는 없지만 ... `'Method'`도 취할 수 있도록 해보겠습니다.
+함수 실행 시 사용하는 옵션 설정입니다. 특별히 용도는 없지만 ... `'Method'`도 취할 수 있도록 해보겠습니다.
 
 ```matlab
 function c = myFunction(a,b,options)
