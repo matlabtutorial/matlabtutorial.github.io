@@ -22,3 +22,14 @@ jobs:
         uses: matlab-actions/run-command@v1
         with:
           command: addpath("pages/tags/"), creating_tagfiles
+      - name: Push updated files
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git diff --shortstat
+          git add .
+          git commit -m "Tag Pages Updated via MATLAB Actions"
+          git push origin HEAD:${GITHUB_REF}
