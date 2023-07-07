@@ -1,8 +1,8 @@
 ---
-title: "Tag: 디폴트인자"
-tagName: 디폴트인자
+title: "Tag: 수치 계산"
+tagName: 수치 계산
 search: exclude
-permalink: tag_디폴트인자.html
+permalink: tag_수치 계산.html
 sidebar: False
 folder: tags
 ---

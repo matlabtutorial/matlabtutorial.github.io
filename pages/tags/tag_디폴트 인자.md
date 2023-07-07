@@ -1,8 +1,8 @@
 ---
-title: "Tag: 수치계산"
-tagName: 수치계산
+title: "Tag: 디폴트 인자"
+tagName: 디폴트 인자
 search: exclude
-permalink: tag_수치계산.html
+permalink: tag_디폴트 인자.html
 sidebar: False
 folder: tags
 ---

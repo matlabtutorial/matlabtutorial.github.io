@@ -11,10 +11,9 @@ for i_file = 1:length(filenames)
     temp = extractBetween(temp, "[", "]");
     temp = split(temp, ",");
     if any(startsWith(temp, " ")) % 공란으로 시작하는 문자열이 있는 경우
-        idx2check = find(startsWith(temp, " "));
-        for i_temp = idx2check'
-            temp{i_temp}(1) = []; % 시작하는 공란 문자 제거
-        end 
+        for i_temp = 1:length(temp)
+
+        end
     end
     Tags = [Tags; temp];
 end
