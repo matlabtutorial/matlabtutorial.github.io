@@ -1,10 +1,10 @@
 Tags = [];
 
-D = dir("../../_posts/*.md");
+D = dir("./_posts/*.md");
 filenames = {D.name}; clear D;
 
 for i_file = 1:length(filenames)
-    myStr = readlines("../../_posts/"+filenames{i_file});
+    myStr = readlines("./_posts/"+filenames{i_file});
 
     temp = extractAfter(myStr, "tags:");
     temp(ismissing(temp)) = [];
@@ -20,17 +20,17 @@ for i_file = 1:length(filenames)
 end
 
 % tags 초기화
-D = dir("*.md");
+D = dir("./pages/tags/*.md");
 filenames = {D.name}; clear D;
 
 for i_file = 1:length(filenames)
-    delete(filenames{i_file});
+    delete("./pages/tags/"+filenames{i_file});
 end
 
 TagsUnique = unique(Tags);
 for i_tag = 1:length(TagsUnique)
     outStr = strTemplate(TagsUnique(i_tag));
-    writelines(outStr, "tag_"+TagsUnique(i_tag)+".md");
+    writelines(outStr, "./pages/tags/tag_"+TagsUnique(i_tag)+".md");
 end
 
 function outStr = strTemplate(placeholder)
