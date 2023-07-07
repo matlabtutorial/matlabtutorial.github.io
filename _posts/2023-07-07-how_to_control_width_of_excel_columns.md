@@ -19,7 +19,7 @@ toc: true
 
 공식 페이지라고 할 수 있는 것은 여기를 확인하여 주십시오: [Read Spreadsheet Data Using Excel as Automation Server](https://kr.mathworks.com/help/matlab/matlab_external/example-reading-excel-spreadsheet-data.html?lang=en)
 
-`xlswrite`를 사용하는 방법은 아래의 "[왜 xlswrite는 추천하지 않는가?](how_to_control_width_of_excel_columns.html#왜-xlswrite는-추천하지-않는가?)" 글꼭지을 읽어보셔도 좋을 것 같습니다.
+`xlswrite`를 사용하는 방법은 아래의 "[왜 xlswrite는 추천하지 않는가?](https://matlabtutorial.github.io/how_to_control_width_of_excel_columns.html#%EC%99%9C-xlswrite%EB%8A%94-%EC%B6%94%EC%B2%9C%ED%95%98%EC%A7%80-%EC%95%8A%EB%8A%94%EA%B0%80)" 글꼭지을 읽어보셔도 좋을 것 같습니다.
 
 LiveScript판 (MATLAB)은 [GitHub: ActiveX-Excel-MATLAB](https://github.com/mathworks/ActiveX-Excel-MATLAB)[^1]에 올라가있습니다.
 
