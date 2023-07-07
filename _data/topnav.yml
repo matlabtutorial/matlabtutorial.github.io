@@ -8,7 +8,7 @@ topnav:
     - title: Blog
       url: /blog
     - title: MATLAB Q&A <i class="fa fa-external-link" aria-hidden="true"></i>
-      external_url: https://kr.mathworks.com/matlabcentral/answers/index
+      external_url: https://kr.mathworks.com/matlabcentral/answers/?language=ko&sort=asked+desc
       
 #Topnav dropdowns
 topnav_dropdowns:
