@@ -3,13 +3,13 @@
 topnav:
 - title: Topnav
   items:
-#    - title: GitHub
-#      external_url: https://github.com/matlabtutorial/matlabtutorial.github.io
     - title: News
       url: /news.html
     - title: Blog
       url: /blog
-
+    - title: MATLAB Q&A <i class="fa fa-external-link" aria-hidden="true"></i>
+      external_url: https://kr.mathworks.com/matlabcentral/answers/index
+      
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
@@ -28,5 +28,7 @@ topnav_dropdowns:
       folderitems:
         - title: MATLAB Basics(KR)
           url: /1. matlab_basics_why_use_matlab.html
-
+        
+# - title: Q&A
+#   external_url: https://kr.mathworks.com/matlabcentral/answers/index
 # Copyright 2021 Google LLC
