@@ -66,7 +66,7 @@ out = varargin{end - varargin{1}};
 
 일단 `varargin{1}`이 없이 `varargin{end}`만 사용하는 경우를 생각해보자.
 
-`varargin`은 {[1]}, {'yes'}, {'no'}의 세 가지 값을 가지는 cell 타입 변수이므로 `varargin{end}`는 무조건 `'no'`를 출력해줄 것이라는 것을 우선 생각할 수 있다. 그런데, `varargin{1}`은 true(1) 혹은 false(0)의 값 만을 가진다는 점을 생각해보았을 때, varargin{1}은 1 혹은 0이 된다는 것을 알 수 있다. 그러므로 첫 번째 입력이 treu 이면 `end - varargin{1}` 은 `end-1`과 같아지고 첫 번째 입력이 false 이면 `end-varargin{1}`은 `end-0`이 되는 것을 알 수 있다.
+`varargin`은 {[1]}, {'yes'}, {'no'}의 세 가지 값을 가지는 cell 타입 변수이므로 `varargin{end}`는 무조건 `'no'`를 출력해줄 것이라는 것을 우선 생각할 수 있다. 그런데, `varargin{1}`은 true(1) 혹은 false(0)의 값 만을 가진다는 점을 생각해보았을 때, varargin{1}은 1 혹은 0이 된다는 것을 알 수 있다. 그러므로 첫 번째 입력이 true 이면 `end - varargin{1}` 은 `end-1`과 같아지고 첫 번째 입력이 false 이면 `end-varargin{1}`은 `end-0`이 되는 것을 알 수 있다.
 
 따라서, 첫 번째 입력이 `true`이면 `varargin{end-varargin{1}}`은 `varargin{end-1}`이 되고 그 말은 `'yes'`를 출력하는 것이다. 반대로 첫 번째 입력이 `false`이면 `varargin{end-varargin{1}}`은 `varargin{end-0}`이 되고 그 말은 `'no'`를 출력하는 것이다.
 
