@@ -9,6 +9,8 @@ sidebar: false
 toc: true
 ---
 
+<meta property="'''og:image'''" content="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/149511/073cb359-8bf3-5a23-c6ba-d4c86cd704a1.gif" />
+
 본 포스트의 원문은 아래의 URL에서 확인하실 수 있습니다. 본 포스트는 원작자에게 동의를 구한 뒤 한국어로 번역하였습니다.
 
 - [ぬめぬめ動く棒グラフ Bar Chart Race を描いてみよう: 準備編](https://qiita.com/eigs/items/62fbc0b6bdc5e7094abf)
