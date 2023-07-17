@@ -186,7 +186,7 @@ B와 C가 교환되었다는 느낌이 드네요!
 
 [nonlinopt](https://twitter.com/nonlinopt) 님의 [지적](https://twitter.com/nonlinopt/status/1219569299188137989)을 받아 `CData` 속성을 사용하여 막대를 개별적으로 색상으로 나눌 수 있다는 것을 알게 되었습니다. nonlinopt 님께 감사드립니다.
 
-<img src="https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-17-bar_chart_race1/cdata.png" width=500px>
+<img src="https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-17-bar_chart_race1/cdata.png">
 
 ```matlab
 
