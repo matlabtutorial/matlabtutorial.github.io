@@ -7,9 +7,9 @@ tags: [번역, 시각화, 애니메이션, 막대 그래프]
 identifier: bar_chart_race1
 sidebar: false
 toc: true
+ogimage: https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/149511/073cb359-8bf3-5a23-c6ba-d4c86cd704a1.gif
 ---
 
-<meta property="'''og:image'''" content="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/149511/073cb359-8bf3-5a23-c6ba-d4c86cd704a1.gif" />
 
 본 포스트의 원문은 아래의 URL에서 확인하실 수 있습니다. 본 포스트는 원작자에게 동의를 구한 뒤 한국어로 번역하였습니다.
 
