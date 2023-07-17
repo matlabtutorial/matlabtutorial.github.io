@@ -7,6 +7,7 @@ tags: [번역, Excel, QiitaAPI, 자동화]
 identifier: auto_excel_with_hyperlinked_texts
 sidebar: false
 toc: true
+ogimage: https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F149511%2F46d82dc6-b8c4-50eb-0d09-f1828543748e.png
 ---
 
 본 포스트의 원문은 아래의 URL에서 확인하실 수 있습니다. 본 포스트는 원작자에게 동의를 구한 뒤 한국어로 번역하였습니다.

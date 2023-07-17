@@ -7,6 +7,7 @@ tags: [번역, 입력 체크, 디폴트 인자]
 identifier: function_arguments
 sidebar: false
 toc: true
+ogimage: https://kr.mathworks.com/help/matlab/matlab_prog/fav_syntax.png
 ---
 
 본 포스트의 원문은 아래의 URL에서 확인하실 수 있습니다. 본 포스트는 원작자에게 동의를 구한 뒤 한국어로 번역하였습니다.

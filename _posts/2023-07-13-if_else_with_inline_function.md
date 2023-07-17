@@ -7,6 +7,7 @@ tags: [삼항 연산자, 인라인 함수, varargin]
 identifier: if_else_with_inline_function
 sidebar: false
 toc: true
+ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-13-if_else_with_inline_function/ternary_example.png
 ---
 
 # 시작하면서

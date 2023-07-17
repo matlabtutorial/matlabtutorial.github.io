@@ -7,6 +7,7 @@ tags: [번역, Excel, ExcelVBA]
 identifier: how_to_control_width_of_excel_columns
 sidebar: false
 toc: true
+ogimage: https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F149511%2F298e69ac-89f4-496c-d160-bc2f379674d2.png
 ---
 
 본 포스트의 원문은 아래의 URL에서 확인하실 수 있습니다. 본 포스트는 원작자에게 동의를 구한 뒤 한국어로 번역하였습니다.

@@ -7,6 +7,7 @@ tags: [번역, 수치 계산]
 identifier: forloop_became_faster
 sidebar: false
 toc: true
+ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-11-forloop_became_faster/forloop.png
 ---
 
 본 포스트의 원문은 아래의 URL에서 확인하실 수 있습니다. 본 포스트는 원작자에게 동의를 구한 뒤 한국어로 번역하였습니다.
