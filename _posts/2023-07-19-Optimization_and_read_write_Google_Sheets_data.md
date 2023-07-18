@@ -7,6 +7,7 @@ tags: [번역, 파이썬, googleapi, 최적화, GoogleSpreadSheet]
 identifier: Optimization_and_read_write_Google_Sheets_data
 sidebar: false
 toc: true
+ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-19-Optimization_and_read_write_Google_Sheets_data/ogimage.png
 ---
 
 본 포스트의 원문은 아래의 URL에서 확인하실 수 있습니다. 본 포스트는 원작자에게 동의를 구한 뒤 한국어로 번역하였습니다.
@@ -39,8 +40,7 @@ pyOut = py.gspread_sample.getValues();
 
 를 위한 내용이라고 생각합니다.
 
-Python과 MATLAB의 연동에 대한 공식 페이지는 여기에 있으니 참고하여 주십시오: [MATLAB에서 Python 호출하기
-](https://kr.mathworks.com/help/matlab/call-python-libraries.html)
+Python과 MATLAB의 연동에 대한 공식 페이지는 여기에 있으니 참고하여 주십시오: [MATLAB에서 Python 호출하기](https://kr.mathworks.com/help/matlab/call-python-libraries.html)
 
 ## 왜 MATLAB과 Python을 함께 쓰는거지?
 
