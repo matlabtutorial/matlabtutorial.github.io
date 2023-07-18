@@ -4,6 +4,10 @@
 <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
 <meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
 
+{% unless page.ogtitle == '' %}
+  <meta property="og:title" content="{{page.ogtitle}}" />
+{% endunless %}
+
 {% unless page.ogimage == '' %}
   <meta property="og:image" content="{{page.ogimage}}" />
 {% endunless %}

@@ -8,6 +8,7 @@ comments: false
 startnote: true
 toc: false
 ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/ogimage.png
+ogtitle: 모두를 위한 MATLAB
 ---
 
 안녕하세요! "모두를 위한 MATLAB"에 오신 것을 환영합니다. 저희 튜토리얼 페이지는 MATLAB 프로그래밍 언어를 처음부터 배우기에 완벽한 시작점이 될 것입니다.
