@@ -51,7 +51,7 @@ Python과 MATLAB의 연동에 대한 공식 페이지는 여기에 있으니 참
 
 의 두가지 이유때문에 MATLAB을 베이스로 해보게 되었습니다. Python은 평소에 잘 만지지 않기 때문에 부족한 점이 있다고 생각합니다만, 만약 개선할 수 있는 점이 있다면 지적 부탁드립니다. 
 
-보충) File Exchange에 공개되어 있느s MATLAB 함수 [GetGoogleSpreadsheet](https://jp.mathworks.com/matlabcentral/fileexchange/39915-getgooglespreadsheet?s_eid=PSM_29435) 를 쓰면 더 쉬울지도 모르겠습니다.
+보충) File Exchange에 공개되어 있는 MATLAB 함수 [GetGoogleSpreadsheet](https://jp.mathworks.com/matlabcentral/fileexchange/39915-getgooglespreadsheet?s_eid=PSM_29435) 를 쓰면 더 쉬울지도 모르겠습니다.
 
 ## 환경
 
