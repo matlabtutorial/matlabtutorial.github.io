@@ -7,7 +7,7 @@ tags: [번역, MATLAB, 역사]
 identifier: A_History_of_MATLAB
 sidebar: false
 toc: true
-ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/ogimage.png
+ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/ogimage.png
 ---
 
 {% include important.html content="원문의 첫 페이지에서 다음과 같이 확인할 수 있는 문구를 바탕으로 본 페이지의 번역물을 디지털 방식으로 작성하여 공개하는 것임을 알려드리며 본 페이지에서는 어떠한 상업적 이익도 발생하지 않는다는 것을 알려드립니다." %}
@@ -38,7 +38,7 @@ ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.
 1966년 대학원 졸업 후 첫 직장에서 Cleve Moler는 수학 조교수로 재직했습니다. 그는 미적분학, 수치해석학, 그리고 선형대수학을 가르쳤습니다. 선형대수학 수업에서는 추상적인 벡터 공간에서 선형 변환에 관한 정리들의 증명을 강조하는 전통적인 강의 계획을 따랐습니다. 컴퓨터나 행렬의 응용에는 시간을 할애하지 않았습니다. 이후 그는 절대로 전통적인 강의 계획을 다시 따르지 않기로 다짐했습니다. 그는 특잇값 분해와 같은 행렬 인수분해를 사용하고, 주성분 분석과 같은 응용을 강조하고자 했습니다. 또한 학생들이 컴퓨터와 현대 소프트웨어를 사용하도록 원했습니다. 전통적인 선형대수학을 대체할 새로운 과목으로 "행렬 분석(matrix analysis)"이라는 코스를 개설하고자 했습니다.
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig1.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig1.png">
     <br>
     그림 1. MATLAB 개발 중 주요 사건들
 </p>
@@ -82,7 +82,7 @@ EISPACK에 대한 자세한 내용은 [NA Moler 2018a]를 참조하십시오.
 1975년, EISPACK이 마무리 단계에 접어들 때, Jack Dongarra, Pete Stewart, Jim Bunch, 그리고 Cleve Moler (그림 3 참조)은 또 다른 수학적 소프트웨어 개발 방법을 조사하기 위한 연구 프로젝트를 NSF에 제안했습니다. 부산물은 "선형 방정식 패키지"로 명명된 소프트웨어였습니다[Dongarra 등 1979]. 이 프로젝트 또한 Argonne에서 집중적으로 진행되었습니다. 대학교에서 참여한 세 명의 참가자는 학년중 자신들의 학교에서 작업하였고, 네 명 모두 여름에 Argonne에서 함께 모였습니다.
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig2.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig2.png">
     <br>
     그림 2. J. H. Wilkinson이 1970년대 초 Argonne에서 청중에게 행렬 알고리즘을 설명하는 모습 (출처: Argonne National Laboratory)
 </p>
@@ -98,7 +98,7 @@ LINPACK 내용에 대한 요약은 [na Moler 2018b]를 참조하십시오.
 오늘날, LINPACK은 행렬 소프트웨어 라이브러리보다는 벤치마크로 더 잘 알려져 있습니다. LINPACK 벤치마크에 대해서는 [na Moler 2013e]를 참조하십시오.
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig3.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig3.png">
     <br>
     그림 3. LINPACK의 저자들: Jack Dongarra, Cleve Moler, Pete Stewart, 그리고 Jim Bunch (1978년). (출처: Cleve Moler)
 </p>
@@ -112,7 +112,7 @@ LINPACK 내용에 대한 요약은 [na Moler 2018b]를 참조하십시오.
 Wirth의 접근 방식을 따라, Moler는 Fortran에서 PL/0의 변형으로 행렬(matrix)만을 데이터 유형으로 갖는 최초의 MATLAB을 작성했습니다. 이 프로젝트는 그저 그가 배울 새로운 프로그래밍 방법이자 학생들에게 제공할 무언가였습니다. 현재 MathWorks가 운영되고 있는 상업적인 기업은 몇 년 후에 탄생한 것이며, 이 당시에는 어떠한 공식적인 외부 지원이나 사업 계획도 없었습니다.
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig4.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig4.png">
     <br>
     그림 4. 1981년 5월 12일 버전의 MATLAB 시작 화면
 </p>
@@ -162,7 +162,7 @@ x = A\b;
 가 MATLAB을 대표하는 문장으로 자리잡았습니다. 이 문장만 적혀있는 티셔츠는 아주 인기가 있으며, MathWorks는 학회에서 이런 티셔츠를 무료로 나누어주기도 합니다. (그림 5를 참조하세요.)
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig5.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig5.png">
     <br>
     그림 5. 이 인기 있는 티셔츠에는 상징적인 MATLAB 역슬래시 연산이 특징으로 나타나 있습니다. (출처: Patsy Moler.)
 </p>
@@ -170,15 +170,20 @@ x = A\b;
 ## 2.2 콜론 연산자
 
 콜론 연산자는 MATLAB에서 중요한 역할을 합니다:
-    a:d:b는 행 벡터 [𝑎,𝑎 + 𝑑,𝑎 + 2𝑑, . . . ,𝑎 + 𝑛𝑑]을 나타내며, 여기서 𝑛 = floor((𝑏 − 𝑎)/𝑑)입니다.
+
+$\Rightarrow$ `a:d:b`는 행 벡터 $\begin{bmatrix}a, a+d, a + 2d, \cdots, a+nd\end{bmatrix}$ 을 나타내며, 여기서 $n=\text{floor}((b-a/d))$입니다.
+
 만약 d = 1이라면, 생략할 수 있습니다:
-    a:b는 행 벡터 [𝑎,𝑎 + 1,𝑎 + 2, . . . ,𝑎 + 𝑛]을 나타내며, 여기서 𝑛 = floor(𝑏 − 𝑎)입니다.
+
+$\Rightarrow$ `a:b`는 행 벡터$\begin{bmatrix}a, a+1, a + 2, \cdots, a+n\end{bmatrix}$을 나타내며, 여기서 $n=\text{floor}(b-a)$입니다.
+
 다음은 몇 가지 예시입니다:
 - 1:10은 1부터 10까지의 정수로 이루어진 행 벡터입니다.
 - 0:0.1:10은 길이가 101인 행 벡터 [0, 0.1, 0.2, . . . , 9.8, 9.9, 10.0]입니다.
 - 'A':'Z'는 26개의 대문자 알파벳으로 이루어진 문자열입니다.
 - A(i:m,j:n)은 행렬 A의 하위 행렬(submatrix)입니다.
-- 아래의 스크립트는 <statements>들을 n 번 실행합니다.
+- 아래의 스크립트는 `<statements>`들을 n 번 실행합니다.
+  
 ```matlab
 for k = 1:n
     <statements>
@@ -200,7 +205,7 @@ Classic MATLAB에 이미 what, while, who가 있었기 때문에, Moler는 why�
     INSUFFICIENT DATA TO ANSWER.
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig6.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig6.png">
     <br>
     그림 6. Classic MATLAB에서 내부적으로 사용되는 문자 코드 표
 </p>
@@ -260,12 +265,12 @@ Classic MATLAB은 USER라는 하나의 외부 사용자 정의 함수를 허용�
 
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig7.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig7.png">
     <br>
     그림 7. MathWorks 설립자이자 CEO인 잭 리틀(Jack Little) (2000년) (출처: MathWorks)
 </p>
 
-# 2.7 전신들
+## 2.7 전신들
 
 Classic MATLAB의 가장 중요한 소프트웨어 전신들은 Algol 60과 Fortran II였습니다. Algol은 형식적인 구조를 제공하고, Wirth의 Pascal과 PL/0을 통해 구문 분석 기술을 제공했습니다. Fortran은 당시에 과학적 계산을 위한 언어로 잘 확립되어 있었습니다. LINPACK과 EISPACK은 Fortran으로 작성되었으며, IMSL 및 NAG와 같은 다른 수치 소프트웨어 컬렉션도 Fortran으로 작성되었습니다.
 
@@ -404,13 +409,13 @@ MATLAB에서 사용자 정의 함수를 지원하는 기능은 MATLAB 코드나 
 배열에 대한 작업은 메모리 맵드 그래픽스에 편리했습니다. 배열 데이터 유형은 2차원(X-Y) 및 3차원(X-Y-Z) 차트에 자연스러웠습니다. 그러나 심지어 1981년 버전의 클래식 MATLAB에는 원시적인 플롯 함수가 있었는데 이는 "ASCII 플롯"을 생성했습니다 (그림 8 참조). 오늘날의 MATLAB은 동일한 함수에 대해 더 세련된 플롯을 생성합니다 (그림 9 참조).
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig8.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig8.png">
     <br>
     그림 8. 이 휴대용 기계 독립적인 그래프는 클래식 MATLAB의 일부이며, 부분적으로 농담이었지만 미래의 그래픽 기능에 대한 예상이었습니다.
 </p>
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig9.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig9.png">
     <br>
     그림 9. 동일한 함수에 대한 현대적인 MATLAB으로 생성된 그래프
 </p>
@@ -418,13 +423,13 @@ MATLAB에서 사용자 정의 함수를 지원하는 기능은 MATLAB 코드나 
 캘리포니아 대학교 산타 바바라 캠퍼스의 교수인 Marvin Marcus가 저술한 교과서 "Matrices and MATLAB"은 Macintosh-IIci에서 개발되었으며 초기 컴퓨터 그래픽스를 이용했습니다 [Marcus 1993]. 그림 10은 𝑓(𝑧) = 𝑧2 + 𝑐 함수의 Julia 집합을 𝑐 = 0.1 + 0.8𝑖로 MATLAB이 그린 그래프입니다. 오늘날의 MATLAB로 그려진 플롯에서는 훨씬 더 많은 세부 사항이 보입니다 (그림 11 참조).
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig10.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig10.png">
     <br>
     그림 10. 1992년에 Marvin Marcus [Marcus 1993]가 Apple Macintosh IIci에서 MATLAB으로 생성한 줄리아 집합의 그래프입니다. (출처: Prentice Hall)
 </p>
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig11.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig11.png">
     <br>
     그림 11. 동일한 줄리아 집합의 그래프로 현대적인 MATLAB으로 생성한 것입니다.
 </p>
@@ -442,7 +447,7 @@ title('tan(sin(x)) - sin(tan(x))')
 ```
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig12.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig12.png">
     <br>
     그림 12. 현대적인 MATLAB으로 생성한 2차원 플롯
 </p>
@@ -459,7 +464,7 @@ mesh(X,Y,Z)
 ```
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig13.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig13.png">
     <br>
     그림 13. 현대적인 MATLAB으로 생성한 3차원 플롯
 </p>
@@ -467,7 +472,7 @@ mesh(X,Y,Z)
 Control System Toolbox에서 Bode 다이어그램은 동적 시스템의 주파수 응답을 보여줍니다 (그림 14 참조).
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig14.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig14.png">
     <br>
     그림 14. 컨트롤 시스템 툴박스의 보데(Bode) 플롯은 시스템의 주파수 응답의 크기와 위상 이동을 보여줍니다.
 </p>
@@ -479,7 +484,7 @@ Control System Toolbox에서 Bode 다이어그램은 동적 시스템의 주파�
 클래식 MATLAB 인터프리터는 수행된 모든 부동 소수점 연산("flop")을 카운트하고, 문장이 추가적인 쉼표로 종료되면 해당 카운트를 보고했습니다. 이 기능은 MathWorks MATLAB으로 이어졌지만, 현재의 MATLAB에서는 행렬 및 기타 계산의 내부 루프가 가능한한 효율적이어야 하기 때문에 사용할 수 없습니다. 그림 15는 𝑛-by-𝑛 행렬의 역행렬을 구하는 것이 약 $n^3$개의 부동 소수점 연산을 필요로 한다는 사실을 보여주는 데모입니다. (1984년 버전의 MATLAB으로 제작되었습니다).
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig15.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig15.png">
     <br>
     그림 15. 클래식 MATLAB에서 추가 쉼표를 사용하여 flops(부동 소수점 연산 수)를 출력하는 방법을 보여주는 데모입니다.
 </p>
@@ -794,7 +799,7 @@ xlabel('t')
 ```
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig16.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig16.png">
     <br>
     그림 16. Van der Pol 진동자는 고전적인 ODE 예시입니다.
 </p>
@@ -885,7 +890,7 @@ class =
 MathWorks는 아마도 세계에서 유일하게 로고로 편미분 방정식의 해를 가지고 있는 회사입니다. 그래픽은 시간이 지남에 따라 진화했습니다 [na Moler 2014c; na Moler 2014e; na Moler 2014d; na Moler 2014b; na Moler 2014a]. 초기에는 2차원 등고선 플롯이었으며, Cleve Moler의 박사 학위 논문 [Moler 1965, Figure (8.15)]에 해당 버전의 플롯이 나왔습니다. 이후 3차원 흑백 표면 플롯으로 진화하고, 다양한 색상과 조명 모델을 적용한 3차원 플롯으로 발전했습니다 (그림 17 참조).
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig17.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig17.png">
     <br>
     그림 17. MathWorks 로고의 진화: 2차원 등고선 플롯에서 3차원 표면 플롯으로 색상과 조명이 적용된 형태로 진화하였습니다. (출처: MathWorks.)
 </p>
@@ -923,7 +928,7 @@ MATLAB 데스크탑은 2000년에 도입되었습니다 [na Moler 2018f]. 그림
 패널 중 하나는 닫거나 독립적인 창으로 만들 수 있습니다. 두 개의 화면을 사용할 수 있는 경우, 하나의 화면에 명령 창을 두고 다른 화면에 편집기를 놓을 수 있습니다.
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig18.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig18.png">
     <br>
     그림 18. MATLAB 데스크탑의 모습 (2019년)
 </p>
@@ -1018,19 +1023,19 @@ methods sym
 Figure 19-21은 라이브 에디터가 Symbolic Math Toolbox 결과를 조판하는 확장된 예제를 보여줍니다.
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig19.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig19.png">
     <br>
     그림 19. MATLAB 라이브 에디터에서 Symbolic Math Toolbox를 사용하는 예시 (1/3)
 </p>
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig19.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig19.png">
     <br>
     그림 20. MATLAB 라이브 에디터에서 Symbolic Math Toolbox를 사용하는 예시 (2/3)
 </p>
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig19.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig19.png">
     <br>
     그림 21. MATLAB 라이브 에디터에서 Symbolic Math Toolbox를 사용하는 예시 (3/3)
 </p>
@@ -1040,13 +1045,13 @@ Figure 19-21은 라이브 에디터가 Symbolic Math Toolbox 결과를 조판하
 Figure 22와 23은 Classic MATLAB을 사용하여 4x4 매직 스퀘어의 여러 속성을 보여주는 데모를 보여줍니다. 이에는 모든 행, 열 및 주 대각선의 합이 34인 사실과 랭크가 3이 아닌 4인 특성이 포함됩니다. Figure 24와 25는 오늘날의 MATLAB Live Editor™를 사용하여 비슷한 데모를 보여줍니다.
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig19.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig19.png">
     <br>
     그림 22. Classic MATLAB에서 매직 스퀘어의 간단한 특성들을 파악하는 예시 (1/2)
 </p>
 
 <p align = "center">
-    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-07-27-A_history_of_MATLAB/fig19.png">
+    <img src= "https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-09-A_history_of_MATLAB/fig19.png">
     <br>
     그림 22. Classic MATLAB에서 매직 스퀘어의 간단한 특성들을 파악하는 예시 (2/2)
 </p>
