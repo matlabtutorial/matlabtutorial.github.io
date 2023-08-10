@@ -2,7 +2,7 @@
 title: (번역) MATLAB의 역사 (A history of MATLAB)
 published: true
 permalink: A_History_of_MATLAB.html
-summary: "Cleve Moler & Jakc Little이 쓴 A history of MATLAB(2000)을 번역했습니다."
+summary: "Cleve Moler & Jakc Little이 쓴 A history of MATLAB(2020)을 번역했습니다."
 tags: [번역, MATLAB, 역사]
 identifier: A_History_of_MATLAB
 sidebar: false
