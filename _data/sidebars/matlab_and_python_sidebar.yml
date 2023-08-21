@@ -1,0 +1,157 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: MATLAB & Python
+  version:
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: 시작하면서...
+    output: web, pdf
+    folderitems:
+    - title: MATLAB & Python 소개
+      url: /1. introduction_to_MATLAB_and_Python.html
+      output: web, pdf
+      type: homepage
+    - title: 과학적 계산의 역사 요약
+      url: /1.1. Summary_of_Scientific_Computing.html
+      output: web, pdf
+      type: homepage
+    - title: 저자 소개
+      url: /1.2. Author.html
+      output: web, pdf
+      type: homepage
+    - title: 오픈 소스 vs 상용
+      url: /1.3. open_source_vs_commercial.html
+      output: web, pdf
+      type: homepage
+    - title: 이 책은 누구를 위한 것인가요?
+      url: /1.4. who_is_this_book_for.html
+      output: web, pdf
+      type: homepage
+
+  - title: MATLAB & Python 종합 프로젝트
+    output: web, pdf
+    folderitems:
+    - title: 전체 큰 그림 보기
+      url: /2. end_to_end_project_with_MATLAB_and_Python.html
+      output: web, pdf
+      type: homepage
+    - title: MATLAB에서 Python 호출하기
+      url: /2.1. calling_Python_from_MATLAB.html
+      output: web, pdf
+      type: homepage
+    - title: Python에서 MATLAB 호출하기
+      url: /2.2. calling_MATLAB_from_Python.html
+      output: web, pdf
+      type: homepage
+    - title: MATLAB 함수 세트에서 Python 패키지 생성하기
+      url: /2.3. Generate a Python package from a set of MATLAB functions.html
+      output: web, pdf
+      type: homepage
+
+  - title: MATLAB 및 Python 설치
+    output: web, pdf
+    folderitems:
+    - title: Python 설치
+      url: /3.1. Install Python.html
+      output: web, pdf
+      type: homepage
+    - title: Anaconda나 다른 파이썬 배포판 설치
+      url: /3.2. Install Anaconda or other Python distribution.html
+      output: web, pdf
+      type: homepage
+    - title: PATH 관리
+      url: /3.3. Manage your PATH.html
+      output: web, pdf
+      type: homepage
+    - title: 추가 파이썬 패키지 설치
+      url: /3.4. Install additional Python packages.html
+      output: web, pdf
+      type: homepage
+    - title: Python 가상 환경 설정하기
+      url: /3.5. Set up a Python virtual environment.html
+      output: web, pdf
+      type: homepage
+    - title: Python 개발 환경 설정하기
+      url: /3.6. Set up a Python Development Environment.html
+      output: web, pdf
+      type: homepage
+    - title: MATLAB과 Python 연결하기
+      url: /3.7. Connect MATLAB to Python.html
+      output: web, pdf
+      type: homepage
+    - title: MATLAB Engine API for Python 설치하기
+      url: /3.8. Install the MATLAB Engine API for Python.html
+      output: web, pdf
+      type: homepage
+
+  - title: MATLAB에서 Python 호출하기
+    output: web, pdf
+    folderitems:
+    - title: MATLAB에서 Python 호출하기
+      url: /4. Call Python from MATLAB.html
+      output: web, pdf
+      type: homepage
+    - title: MATLAB에서 Python 문장 및 파일 실행하기
+      url: /4.1. Execute Python statements and files in MATLAB.html
+      output: web, pdf
+      type: homepage
+    - title: MATLAB 라이브 태스크에서 Python 코드 실행하기
+      url: /4.2. Execute Python code in a MATLAB Live Task.html
+      output: web, pdf
+      type: homepage
+    - title: MATLAB에서 Python 호출의 기본 구문
+      url: /4.3. Basic syntax of calling Python from MATLAB.html
+      output: web, pdf
+      type: homepage
+    - title: MATLAB에서 Python 사용자 정의 함수 호출하기
+      url: /4.4. Call Python User Defined Functions from MATLAB.html
+      output: web, pdf
+      type: homepage
+    - title: MATLAB에서 Python 커뮤니티 패키지 호출하기
+      url: /4.5. Call Python community packages from MATLAB.html
+      output: web, pdf
+      type: homepage
+    - title: MATLAB에서 호출되는 Python 코드 디버그하기
+      url: /4.6. Debug Python code called by MATLAB.html
+      output: web, pdf
+      type: homepage
+    - title: Python과 MATLAB 간의 데이터 매핑
+      url: /4.7. Mapping data between Python and MATLAB.html
+      output: web, pdf
+      type: homepage
+
+  - title: 파이썬 AI 라이브러리를 MATLAB에서 호출하기
+    output: web, pdf
+    folderitems:
+    - title: 파이썬 AI 라이브러리를 MATLAB에서 호출하기
+      url: /5. Call Python AI libraries from MATLAB.html
+      output: web, pdf
+      type: homepage      
+    - title: MATLAB에서 Scikit-learn 호출하기
+      url: /5.1. Call Scikit-learn from MATLAB.html
+      output: web, pdf
+      type: homepage    
+    - title: MATLAB에서 TensorFlow 호출하기
+      url: /5.2. Call TensorFlow from MATLAB.html
+      output: web, pdf
+      type: homepage    
+    - title: MATLAB에서 TensorFlow 모델 가져오기
+      url: /5.3. Import TensorFlow model into MATLAB.html
+      output: web, pdf
+      type: homepage    
+# Copyright by Angelo Yeo

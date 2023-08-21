@@ -26,8 +26,10 @@ topnav_dropdowns:
 #          external_url: http://idratherbewriting.com/category-jekyll/
     - title: Tutorials
       folderitems:
-        - title: MATLAB Basics(KR)
+        - title: MATLAB Basics
           url: /1. matlab_basics_why_use_matlab.html
+        - title: MATLAB & Python
+          url: /1. introduction_to_MATLAB_and_Python.html
         
 # - title: Q&A
 #   external_url: https://kr.mathworks.com/matlabcentral/answers/index
