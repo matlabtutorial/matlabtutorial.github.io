@@ -28,8 +28,8 @@ topnav_dropdowns:
       folderitems:
         - title: MATLAB Basics
           url: /1. matlab_basics_why_use_matlab.html
-        - title: MATLAB & Python
-          url: /1. introduction_to_MATLAB_and_Python.html
+        - title: MATLAB with Python
+          url: /1. introduction_to_MATLAB_with_Python.html
         
 # - title: Q&A
 #   external_url: https://kr.mathworks.com/matlabcentral/answers/index

@@ -2,7 +2,7 @@
 
 entries:
 - title: sidebar
-  product: MATLAB & Python
+  product: MATLAB with Python
   version:
   folders:
 
@@ -22,8 +22,8 @@ entries:
   - title: 시작하면서...
     output: web, pdf
     folderitems:
-    - title: MATLAB & Python 소개
-      url: /1. introduction_to_MATLAB_and_Python.html
+    - title: MATLAB with Python 소개
+      url: /1. introduction_to_MATLAB_with_Python.html
       output: web, pdf
       type: homepage
     - title: 과학적 계산의 역사 요약
