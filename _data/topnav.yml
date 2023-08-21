@@ -3,8 +3,8 @@
 topnav:
 - title: Topnav
   items:
-    - title: News
-      url: /news.html
+    #- title: News
+    #  url: /news.html
     - title: Blog
       url: /blog
     - title: MATLAB Q&A <i class="fa fa-external-link" aria-hidden="true"></i>
