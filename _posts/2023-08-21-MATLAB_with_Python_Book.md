@@ -7,7 +7,7 @@ tags: [번역, MATLAB, Python]
 identifier: MATLAB_with_Python_Book
 sidebar: false
 toc: true
-ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-21-MATLAB_with_Python/ogimage.png
+ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2023-08-21-MATLAB_with_Python/ogimage.jpg
 ---
 
 본 게시글의 원문은 Yann Debray의 [`MATLAB with Python Book`](https://github.com/yanndebray/matlab-with-python-book) 입니다. 해당 책은 MIT 라이센스를 따르기 때문에 개인적으로 번역하여 재배포 합니다. 본 포스팅에는 추후 유료 수익을 위한 광고가 부착될 수도 있습니다.
