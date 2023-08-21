@@ -2109,8 +2109,8 @@ Xc = cell(X)'
 |3|1x2 list|
 |4|1x2 list|
 |5|1x2 list|
-...
 
+...
 
 ```matlab
 Xc1 = cell(Xc{1})
