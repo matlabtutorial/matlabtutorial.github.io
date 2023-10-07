@@ -117,4 +117,12 @@ entries:
       url: /2. looping.html
       output: web, pdf
       type: homepage
+  - title: 함수
+    output: web, pdf
+    folderitems:
+    - title: 함수를 정의하고 사용하는 법
+      url: /1. basics_of_functions.html
+      output: web, pdf
+      type: homepage
+
 # Copyright by Angelo Yeo
