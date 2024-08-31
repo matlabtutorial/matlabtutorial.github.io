@@ -154,4 +154,25 @@ entries:
       url: /5.3. Import TensorFlow model into MATLAB.html
       output: web, pdf
       type: homepage    
+
+  - title: 파이썬에서 MATLAB 호출하기
+    output: web, pdf
+    folderitems:
+    - title: 파이썬에서 MATLAB 호출하기
+      url: /6. Call MATLAB from Python.html
+      output: web, pdf
+      type: homepage      
+    - title: Python용 MATLAB Engine API 시작해보기
+      url: /6.1 Getting started with the MATLAB Engine API for Python.html
+      output: web, pdf
+      type: homepage    
+    - title: MATLAB App을 활용한 AI 개발
+      url: /6.2 Facilitate AI development by using MATLAB Apps.html
+      output: web, pdf
+      type: homepage    
+    - title: MATLAB Community의 작업물들을 활용하기
+      url: /6.3 Leverage the work from MATLAB community.html
+      output: web, pdf
+      type: homepage    
+
 # Copyright by Angelo Yeo
