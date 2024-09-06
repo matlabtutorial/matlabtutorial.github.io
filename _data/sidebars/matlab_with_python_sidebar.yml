@@ -175,41 +175,41 @@ entries:
       output: web, pdf
       type: homepage    
 
-  # - title: Python과 함께하는 Simulink
-  #   output: web, pdf
-  #   folderitems:
-  #   - title: Python과 함께하는 Simulink
-  #     url: /7. Simulink with Python.html
-  #     output: web, pdf
-  #     type: homepage      
-  #   - title: Python 코드를 Simulink 라이브러리로 가져와 Co-Execution 하기
-  #     url: /7.1 Bring Python code into Simulink as a library for co-execution.html
-  #     output: web, pdf
-  #     type: homepage    
-  #   - title: 텐서플로우와 파이토치 모델 통합을 통한 시뮬레이션 및 코드 생성
-  #     url: /7.2. Integrate TensorFlow and PyTorch models for both simulation and code generation.html
-  #     output: web, pdf
-  #     type: homepage    
-  #   - title: Python에서 직접 Simulink 모델 시뮬레이션하기
-  #     url: /7.3.  Simulate a Simulink model directly from Python.html
-  #     output: web, pdf
-  #     type: homepage    
-  #   - title: Simulink 모델을 배포를 위해 Python 패키지로 내보내기
-  #     url: /7.4. Export a Simulink model as a Python package for deployment.html
-  #     output: web, pdf
-  #     type: homepage    
+  - title: Python과 함께하는 Simulink
+    output: web, pdf
+    folderitems:
+    - title: Python과 함께하는 Simulink
+      url: /7. Simulink with Python.html
+      output: web, pdf
+      type: homepage      
+    - title: Python 코드를 Simulink 라이브러리로 가져와 Co-Execution 하기
+      url: /7.1 Bring Python code into Simulink as a library for co-execution.html
+      output: web, pdf
+      type: homepage    
+    - title: 텐서플로우와 파이토치 모델 통합을 통한 시뮬레이션 및 코드 생성
+      url: /7.2. Integrate TensorFlow and PyTorch models for both simulation and code generation.html
+      output: web, pdf
+      type: homepage    
+    - title: Python에서 직접 Simulink 모델 시뮬레이션하기
+      url: /7.3.  Simulate a Simulink model directly from Python.html
+      output: web, pdf
+      type: homepage    
+    - title: Simulink 모델을 배포를 위해 Python 패키지로 내보내기
+      url: /7.4. Export a Simulink model as a Python package for deployment.html
+      output: web, pdf
+      type: homepage    
 
-  # - title: Resources
-  #   output: web, pdf
-  #   folderitems:
-  #   - title: MATLAB Online에서 Python 패키지 얻기
-  #     url: /8.1. Getting Python packages on MATLAB Online.html
-  #     output: web, pdf
-  #     type: homepage      
-  #   - title: Quarto와 Pandoc으로 이 책 생성하기
-  #     url: /8.2. Generate this book with Quarto and Pandoc.html
-  #     output: web, pdf
-  #     type: homepage    
+  - title: Resources
+    output: web, pdf
+    folderitems:
+    - title: MATLAB Online에서 Python 패키지 얻기
+      url: /8.1. Getting Python packages on MATLAB Online.html
+      output: web, pdf
+      type: homepage      
+    - title: Quarto와 Pandoc으로 이 책 생성하기
+      url: /8.2. Generate this book with Quarto and Pandoc.html
+      output: web, pdf
+      type: homepage    
 
       
 # Copyright by Angelo Yeo
