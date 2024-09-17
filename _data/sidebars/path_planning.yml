@@ -1,0 +1,32 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Path Planning for Mobile Robot with MATLAB and Simulink
+  version:
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: 이동 로봇의 Path Planning
+    output: web, pdf
+    folderitems:
+    - title: 1. Path Planning이란?
+      url: /1. what_is_path_planning.html
+      output: web, pdf
+      type: homepage
+
+
+      
+# Copyright by Angelo Yeo

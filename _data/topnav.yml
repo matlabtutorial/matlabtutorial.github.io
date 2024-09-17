@@ -30,6 +30,8 @@ topnav_dropdowns:
           url: /1. matlab_basics_why_use_matlab.html
         - title: MATLAB with Python
           url: /1. introduction_to_MATLAB_with_Python.html
+        - title: Path Planning for Mobile Robot
+          url: /1. what_is_path_planning.html
         
 # - title: Q&A
 #   external_url: https://kr.mathworks.com/matlabcentral/answers/index

@@ -1,0 +1,26 @@
+
+plannerAStar: "그래프 기반 A* path planner" # https://kr.mathworks.com/help/nav/ref/plannerastar.html
+
+plannerAStarGrid: "Grid Map 기반 A* Path Planner" # https://kr.mathworks.com/help/nav/ref/plannerastargrid.html
+
+plannerHybridAStar: "Hybrid A* path planner, A*를 확장한 것" # https://kr.mathworks.com/help/nav/ref/plannerhybridastar.html?lang=en
+
+plannerPRM: "Probabilistic Roadmap Path Planner" # https://kr.mathworks.com/help/nav/ref/plannerprm.html
+
+plannerRRT: "RRT 플래너" # https://kr.mathworks.com/help/nav/ref/plannerrrt.html
+
+plannerRRTStar: "RRT* 플래너" # https://kr.mathworks.com/help/nav/ref/plannerrrtstar.html
+
+plannerBiRRT: "bidirectional RRT planner" # https://kr.mathworks.com/help/nav/ref/plannerbirrt.html
+
+plannerControlRRT: "Control-based RRT planner" # https://kr.mathworks.com/help/nav/ref/plannercontrolrrt.html
+
+nlmpc: "Nonlinear model predictive controller" # https://kr.mathworks.com/help/mpc/ref/nlmpc.html
+
+nlmpcMultistage: "Multistage nonlinear model predictive controller" # https://kr.mathworks.com/help/mpc/ref/nlmpcmultistage.html
+
+trajectoryGeneratorFrenet: "Frenet Planner" # https://kr.mathworks.com/help/nav/ref/trajectorygeneratorfrenet.html
+
+controllerTEB: "Timed Elastic Band Planner" # https://kr.mathworks.com/help/nav/ref/controllerteb.html
+
+# Copyright 2021 Google LLC
