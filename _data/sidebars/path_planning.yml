@@ -26,6 +26,10 @@ entries:
       url: /1. what_is_path_planning.html
       output: web, pdf
       type: homepage
+    - title: 2. Motion Primitives
+      url: /2. Motion_Primitives.html
+      output: web, pdf
+      type: homepage
 
 
       
