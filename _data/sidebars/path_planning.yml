@@ -30,6 +30,10 @@ entries:
       url: /2. Motion_Primitives.html
       output: web, pdf
       type: homepage
+    - title: 3. Environment & Collision Check
+      url: /3. Environment_and_Collision_Check.html
+      output: web, pdf
+      type: homepage
 
 
       
