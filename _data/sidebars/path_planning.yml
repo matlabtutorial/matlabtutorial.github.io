@@ -34,6 +34,10 @@ entries:
       url: /3. Environment_and_Collision_Check.html
       output: web, pdf
       type: homepage
+    - title: 4. Route Planning
+      url: /4. Route Planning.html
+      output: web, pdf
+      type: homepage
 
 
       
