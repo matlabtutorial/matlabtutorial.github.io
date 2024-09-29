@@ -38,6 +38,10 @@ entries:
       url: /4. Route Planning.html
       output: web, pdf
       type: homepage
+    - title: 5. Search-Based Path Planning
+      url: /5. Search_Based_Path_Planning.html
+      output: web, pdf
+      type: homepage
 
 
       
