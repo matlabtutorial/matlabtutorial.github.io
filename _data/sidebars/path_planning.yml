@@ -42,6 +42,10 @@ entries:
       url: /5. Search_Based_Path_Planning.html
       output: web, pdf
       type: homepage
+    - title: 6. Sampling-Based Path Planning
+      url: /6. Sampling_Based_Path_Planning.html
+      output: web, pdf
+      type: homepage
 
 
       
