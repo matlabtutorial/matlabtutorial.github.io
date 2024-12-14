@@ -46,6 +46,10 @@ entries:
       url: /6. Sampling_Based_Path_Planning.html
       output: web, pdf
       type: homepage
+    - title: 7. Optimization-Based Path Planning
+      url: /7. Optimization_Based_Path_Planning.html
+      output: web, pdf
+      type: homepage
 
 
       
