@@ -8,3 +8,4 @@ vendor/
 .bundle/
 images/matlab_basics/4. control_statement/1. conditional/~$pics.pptx
 images/~$pics.pptx
+*.autosave
