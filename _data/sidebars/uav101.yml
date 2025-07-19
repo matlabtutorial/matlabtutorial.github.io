@@ -22,6 +22,10 @@ entries:
   - title: UAV101
     output: web, pdf
     folderitems:
+    - title: 0. UAV 시뮬레이션의 큰 그림 - 에어프레임 모델부터 제어까지
+      url: /no00_IntroToUAV.html
+      output: web, pdf
+      type: homepage
     - title: 1. Simulink로 에어프레임 모델 구축하기
       url: /no01_Airframe.html
       output: web, pdf
