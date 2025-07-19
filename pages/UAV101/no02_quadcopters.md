@@ -20,11 +20,14 @@ g { color: Green }
 
 해당 포스팅은 아래 영상의 설명을 기반으로 하였으며, Google Gemini의 도움을 받아 작성되었습니다.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cViiIFEXujc?si=qRgitYLhBaK7HG-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p align = "center"><iframe width="560" height="315" src="https://www.youtube.com/embed/cViiIFEXujc?si=qRgitYLhBaK7HG-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
 
 이번 포스팅에 추가적인 정보를 제공해준 영상은 다음과 같습니다.
 
+<p align = "center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hGcGPUqB67Q?si=luANirjnOtzlh5dr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
 
 이 포스팅에서 사용된 시뮬링크 모델들은 이전과 동일하게 아래 링크에서 받으실 수 있습니다.
 
@@ -162,6 +165,8 @@ Simulink 모델에서는 각 프로펠러의 회전 속도($\omega_i$)를 입력
     * **요 토크($M_z$):** 로터 회전 방향에 따른 반작용 토크의 차이로 계산됩니다.
 
 이렇게 계산된 외력 벡터($[F_x, F_y, F_z]$)와 토크 벡터($[M_x, M_y, M_z]$)는 Simulink 모델에서 지난 시간에 구축한 **6자유도 (Euler Angles) 블록의 입력**으로 전달됩니다. 6자유도 블록은 이 힘과 토크를 바탕으로 쿼드콥터의 실제 움직임(위치, 속도, 자세)을 시뮬레이션하게 됩니다. 즉, 프로펠러 속도라는 가장 기본적인 입력이 쿼드콥터의 복잡한 3차원 움직임으로 변환되는 과정이 Simulink 모델 내에서 구현되는 것입니다.
+
+<center><img width = "100%" src="../../images/uav101/no02_quadcopters/SimulinkModelPropellerSpeed.jpg"><br></center>
 
 좌측에 위치한 프로펠러 1, 4번의 속도는 1.1로 설정하고, 우측에 위치한 프로펠러 2, 3번의 속도는 0.9로 설정하면 오른쪽으로 롤링하는 모션을 보이게 된다.
 
