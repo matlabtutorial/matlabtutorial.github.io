@@ -20,11 +20,11 @@ g { color: Green }
 
 해당 포스팅은 아래 영상의 설명을 기반으로 하였으며, Google Gemini의 도움을 받아 작성되었습니다.
 
-<p align = "center"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=cViiIFEXujc&ab_channel=MichaelThorburn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cViiIFEXujc?si=qRgitYLhBaK7HG-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 이번 포스팅에 추가적인 정보를 제공해준 영상은 다음과 같습니다.
 
-<p align = "center"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=hGcGPUqB67Q&list=PLPNM6NzYyzYqMYNc5e4_xip-yEu1jiVrr&ab_channel=MATLAB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hGcGPUqB67Q?si=luANirjnOtzlh5dr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 이 포스팅에서 사용된 시뮬링크 모델들은 이전과 동일하게 아래 링크에서 받으실 수 있습니다.
 
