@@ -142,7 +142,7 @@ Simulink 모델을 구축하는 데 필요한 몇 가지 핵심 블록들이 있
 * **이륙 및 가속:** 이 경우, 추력이 중력보다 약간 더 커서 쿼드콥터는 **일정한 가속도**로 이륙합니다.
 * **속도와 위치:** 속도 크기는 선형적으로 증가하며, 속도와 위치 값이 음수로 나타나는 것은 **Z축이 지면을 향하고 있기 때문**입니다. 즉, Z축이 아래를 향하는데 비행기가 위로 올라가므로 Z 위치는 점점 0에서 음수 방향으로 멀어지는 것을 의미합니다.
 
-<center><img width = "100%" src="../../images/uav101/no01_Airframe/noTorque.jpg"/><br></center>
+<center><img src="../../images/uav101/no01_Airframe/noTorque.jpg"/><br></center>
 
 여기서 $Ve$와 $Xe$는 각각 지구 관성 기준 프레임의 속도와 위치를 나타냅니다. Ve는 일정한 음의 기울기를 가지는 변화를 보인다는 것을 알 수 있고, Xe는 그에 맞춰 2차 함수 곡선 형태로 변화하고 있는 것을 알 수 있습니다.
 
@@ -154,9 +154,9 @@ Simulink 모델을 구축하는 데 필요한 몇 가지 핵심 블록들이 있
 
 이번에는 토크 값을 약간 조정해보겠습니다. Yaw 값을 아주 작게 줘볼게요 (0.005). 비행체가 빙글빙글 돌면서 올라가는 모습을 상상해보면 되겠습니다.
 
-<center><img width = "100%" src="../../images/uav101/no01_Airframe/torqueYaw05.jpg"/><br></center>
+<center><img src="../../images/uav101/no01_Airframe/torqueYaw05.jpg"/><br></center>
 
-위 그림에서 볼 수 있듯이 $\omega_b$ 값이 선형적으로 변하는 것을 볼 수 있고 이에 따라 $psi$(yaw) 값이 2차 함수의 형태로 변해가는 것을 볼 수 있습니다.
+위 그림에서 볼 수 있듯이 $\omega_b$ 값이 선형적으로 변하는 것을 볼 수 있고 이에 따라 `rpy`의 세 번째 차원 값인 $\psi$(yaw)가 2차 함수의 형태로 변해가는 것을 볼 수 있습니다.
 
 <center>
 <video width = "100%" loop autoplay muted controls>
