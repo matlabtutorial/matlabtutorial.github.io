@@ -30,6 +30,10 @@ entries:
       url: /no01_Airframe.html
       output: web, pdf
       type: homepage
+    - title: 2. 쿼드콥터 모델 설계
+      url: /no02_quadcopters.html
+      output: web, pdf
+      type: homepage
 
 
       
