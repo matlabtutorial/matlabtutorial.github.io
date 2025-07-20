@@ -24,7 +24,7 @@ g { color: Green }
 
 이 포스팅에서 사용된 시뮬링크 모델들은 아래 링크에서 받으실 수 있습니다.
 
-👉[**Quadcopter\_Lessons**]([https://kr.mathworks.com/matlabcentral/fileexchange/115770-quadcopter_lessons?s_tid=prof_contriblnk](https://kr.mathworks.com/matlabcentral/fileexchange/115770-quadcopter_lessons?s_tid=prof_contriblnk))
+👉[**Quadcopter\_Lessons**](https://kr.mathworks.com/matlabcentral/fileexchange/115770-quadcopter_lessons?s_tid=prof_contriblnk)
 
 ---
 
@@ -106,14 +106,46 @@ Simulink에서 에어프레임 모델을 구축하려면 먼저 Simulink 창을 
 
 ---
 
-## 4. Simulink 모델의 주요 요소
+## 4. Simulink 모델 설명
 
 Simulink 모델을 구축하는 데 필요한 몇 가지 핵심 블록들이 있습니다.
 
-* **Fixed Mass Body Euler Angles Equations of Motion Block:** 6자유도 블록의 정식 명칭이며, 질량이 고정된 물체의 오일러 각 기반 운동 방정식을 구현합니다.
+* **Fixed Mass Body Euler Angles Equations of Motion Block:** [**6자유도 (Euler Angles) 블록**](https://kr.mathworks.com/help/aeroblks/6dofeulerangles.html){:target="_blank"}의 정식 명칭이며, 질량이 고정된 물체의 오일러 각 기반 운동 방정식을 구현합니다.
 * **Bus Creator / Bus Selector:** 여러 신호들을 하나의 '버스'로 묶거나, 묶인 버스에서 필요한 신호를 선택할 때 사용합니다. 모델의 가독성을 높여줍니다.
 * **Scope:** 시뮬레이션 결과를 그래프로 시각화하여 보여주는 블록입니다.
 * 그 외 기본적인 연산 블록들 (덧셈, 곱셈, 상수 등)이 사용됩니다.
+
+영상에 나오는 순서대로 모델을 그려나가보자면 아래와 같습니다. 세 단계의 모델로 구성되어 있으며 모델들은 아래 링크에서 받을 수 있습니다.
+
+👉[**Simulink Model 받으러 가기**](https://github.com/angeloyeo/Quadcopter_Lessons/tree/main/UAV_Quadcopter_Lessons/UAV_01_AirFrame/SimulinkModels/ModelsInVideo){:target="_blank"}
+
+<center><img src="../../images/uav101/no01_Airframe/step1.jpg"/><br></center>
+
+위 그림에서 제일 중심적인 역할을 하는 것은 아무래도 6DOF 블록입니다. 6DOF 블록은 앞서 설명한 것과 같이 물리엔진의 역할을 해주는 녀석이며, 원하는 병진운동 힘과 회전 운동 토크를 입력하면 기체 고정 좌표계(body-fixed coordinate frame)와 지면 기준 좌표계(flat Earth reference frame)을 고려한 속도, 위치, 오일러 각을 제공해줍니다. 6DOF 블록 뒤에 있는 Bus creator, Bus selector를 이용해서 원하는 신호를 가져오는 것이 포인트라고 할 수 있겠습니다. 여기서는 아무런 힘도 주어지지 않은 상태이고, 토크 값은 모두 0이므로 회전 운동은 하지 않도록 설계되어 있습다.
+
+<center><img src="../../images/uav101/no01_Airframe/step2.jpg"/><br></center>
+
+이제 step2 모델에서는 외력에 해당하는 값들을 왼쪽 위에 보이는 subsystem의 형태로 넣어줍니다. 힘의 종류는 크게 세 가지로 상정되어 있는데 (1) Aerodynamic Drag, (2) Gravitational Force, (3) Thrust 입니다. 
+
+<center><img src="../../images/uav101/no01_Airframe/step2AerodynamicDrag.jpg"/><br></center>
+
+우선 Aerodynamic Drag 부터 보면, Vb (Velocity in the body-fixed frame) 속도 벡터값을 가져오고 아래 수식과 같은 계산 과정을 거치게 됩니다.
+
+$$\vec{F}_{drag} = -0.005 \times ||V_b|| \times V_b$$
+
+여기서 $V_b$는 Veolcity in the body-fixed frame에 해당하는 3차원 벡터를 의미한 것입니다.
+
+**공기역학적 항력(Aerodynamic Drag)**은 쿼드콥터와 같이 공기 중에서 움직이는 물체에 작용하는, **운동 방향에 반대되는 저항력**을 의미합니다. 이 힘은 쿼드콥터의 속도가 빨라질수록 증가하여 비행체의 속도를 늦추려는 경향이 있습니다. 0.005라는 값은 비행체의 형태, 표면의 거칠기, 공기의 밀도, 그리고 속도에 의해 결정되는 항력 파라미터인데 여기서는 임의로 결정된 것이라고 봐도 좋을 것 같습니다. 
+
+<center><img src="../../images/uav101/no01_Airframe/step2GravitationalForce.jpg"/><br></center>
+
+또, Gravitational Force 부분을 보면, [0, 0, 9.81]이라는 중력가속도 벡터에 DCM 행렬을 곱해준 것이 전부입니다. DCM 행렬은 지면 기준 좌표계와 기체 고정 좌표계 간의 변환 관계를 설명하고 있으므로 결국 여기서 수행하는 것은 지구 중력이 기체에 미치는 가속도를 환산하여 적용하는 것임을 알 수 있습니다. 다운 받은 모델을 열어보면 바로 위 subsystem 한 단계 위 subsystme에서는 Mass와 곱해지는 것을 쉽게 확인할 수 있을 것입니다. 
+
+<center><img src="../../images/uav101/no01_Airframe/step2Thrust.jpg"/><br></center>
+
+마지막으로 Thrust 부분은 "추진력"을 의미하는데 -10이 subsystem의 입력으로 들어가고 [0, 0, 1] 벡터와 곱해진 것을 알 수 있습니다. 즉, 여기서는 지표좌표계를 기준으로 10N의 힘으로 윗 방향으로 추진력을 주겠다는 의미입니다. -10의 음수값이 들어가는 것은 드론의 앞으로 이동 방향을 x, 우측으로 이동 방향을 y, 지면으로의 방향을 z 로 설정하기 때문입니다.
+
+<center><img src="../../images/uav101/no01_Airframe/image_0.png"/><br></center>
 
 ---
 
