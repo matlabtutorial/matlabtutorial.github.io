@@ -33,13 +33,17 @@ g { color: Green }
 
 ## 1. Motor Mixing Algorithm: 제어 명령을 프로펠러 속도로
 
-step1 모델은 아래와 같다. 
+step1 시뮬링크 모델은 아래와 같다. step1에서는 빨간색으로 표시한 "A new part" 부분에 초점을 맞춰서 이해하면 된다.
 
 <center><img width = "100%" src="../../images/uav101/no03_PIDControl/step1model.jpg"><br></center>
 
 여기서 "Commands to Propeller Speed - Motor Mixing" 서브시스템 안을 살펴보자.
 
-`Motor Mixing Matrix`는 다음과 같다:
+<center><img width = "100%" src="../../images/uav101/no03_PIDControl/step1MotorMixing.jpg"><br></center>
+
+위 시스템에서는 Feed Forward 텀과 Motor Mixing Matrix를 이용한 Thrust, Roll, Pitch, Yaw 값과의 곱이 마련되어 있다. 최종적으로는 4개의 모터의 회전 속도에 대응하는 4차원 벡터를 출력해주도록 출력이 나오게 되어 있다.
+
+여기서 `Motor Mixing Matrix`는 다음과 같다:
 
 $$0.5 \times \begin{pmatrix} 1 & -1 & -1 & -1 \\ 1 & 1 & -1 & 1 \\ 1 & 1 & 1 & -1 \\ 1 & -1 & 1 & 1 \end{pmatrix}$$
 
@@ -56,13 +60,27 @@ $$0.5 \times \begin{pmatrix} 1 & -1 & -1 & -1 \\ 1 & 1 & -1 & 1 \\ 1 & 1 & 1 & -
 
 ### 1.1. Feedforward 입력의 역할 (시뮬링크 모델에서)
 
-네 시뮬링크 모델에서 프로펠러 속도를 계산할 때 다음과 같은 `Feedforward_Input`을 사용한다고 설명했다:
+step1 시뮬링크 모델에서 프로펠러 속도를 계산할 때 다음과 같은 `Feedforward_Input`을 사용한다:
 
 `Feedforward_Input = [1, 1, 1, 1] * mass * direction * (9.81 / 4)`
+
+<center><img width = "100%" src="../../images/uav101/no03_PIDControl/step1FeedForward.jpg"><br></center>
 
 이 피드포워드 입력은 **쿼드콥터가 제자리에서 안정적으로 떠오르는(호버링하는) 데 필요한 기본 추력 명령을 제공하는 역할**을 한다. `mass * 9.81`은 쿼드콥터의 총 중력(무게)을 나타내며, 이를 `4`(프로펠러 개수)로 나눈 값은 각 프로펠러가 중력을 상쇄하기 위해 발생시켜야 하는 기본 추력이다.
 
 이처럼 피드포워드 항을 사용하면, 제어기가 중력 상쇄와 같은 '항상 필요한' 기본적인 작업을 계산하는 부담을 덜고, **오직 사용자의 조종 입력이나 외부 교란에 대응하는 추가적인 힘/토크**만을 계산하는 데 집중할 수 있게 된다. 이는 제어 시스템의 효율성과 안정성을 크게 높여주는 이점을 가진다.
+
+이제 Thrust를 -10으로 넣어주고 roll 값에 1 단위를 넣어주었을 때 시뮬레이션 해보자.
+
+<center><img width = "100%" src="../../images/uav101/no03_PIDControl/step1Thrust-10Roll1.jpg"><br></center>
+
+Ve, Xe 값은 관성 기준 프레임에서 본 기체의 속도와 거리인데 z 방향으로 잠깐 떴다가 아래로 떨어지는 것을 확인할 수 있다. rpy 값에서는 roll 방향으로 기체가 계속해서 회전한다는 것을 알 수 있다. 3D Animation으로 보면 아래와 같다.
+
+<center>
+<video width = "100%" loop autoplay muted controls>
+  <source src = "../../images/uav101/no03_PIDControl/step1Thrust-10Roll1.mp4">    
+</video>
+</center>
 
 ## 2. PID 제어: 제어 시스템의 핵심 동력
 
