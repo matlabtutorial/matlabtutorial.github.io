@@ -35,8 +35,7 @@ g { color: Green }
 
 step1 모델은 아래와 같다. 
 
-<center><img width = "100%" src="../../images/uav101/no03_PIDControls/step1model.jpg"><br></center>
-
+<center><img width = "100%" src="../../images/uav101/no03_PIDControl/step1model.jpg"><br></center>
 
 여기서 "Commands to Propeller Speed - Motor Mixing" 서브시스템 안을 살펴보자.
 
