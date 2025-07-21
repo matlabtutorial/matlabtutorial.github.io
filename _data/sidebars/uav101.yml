@@ -38,6 +38,10 @@ entries:
       url: /no03_PIDControl.html
       output: web, pdf
       type: homepage
+    - title: 4. PID 제어기 튜닝
+      url: /no04_PIDControllerTuning.html
+      output: web, pdf
+      type: homepage
 
 
       
