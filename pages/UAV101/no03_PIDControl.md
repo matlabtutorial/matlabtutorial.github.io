@@ -82,6 +82,8 @@ Ve, Xe 값은 관성 기준 프레임에서 본 기체의 속도와 거리인데
 </video>
 </center>
 
+사실상 이 step1 시뮬링크 모델까지에서 제어라고 할만한 부분은 thrust에 대한 feed-forward 제어에 불과하다. 하지만 이것으로는 현재 기체의 고도나 방위등을 알 수 없어서 원하는 위치에 옮겨 놓는다던지 원하는 방향으로 보게한다던지 하는 것은 어려운 상태라는 것을 알 수 있다.
+
 ## 2. PID 제어: 제어 시스템의 핵심 동력
 
 PID(Proportional, Integral, and Derivative) 제어기는 다양한 제어 문제에서 핵심적인 역할을 하는 '만능 일꾼'과도 같다. PID 제어는 원하는 상태와 현재 상태의 차이(오차)를 줄여 목표에 도달하도록 돕는 피드백 제어 방식이다.
@@ -108,6 +110,34 @@ PID 제어기는 세 가지 주요 요소로 구성된다:
 * **요 컨트롤러**: 원하는 요 각도와 실제 요 각도 사이의 오차를 기반으로 요 토크 명령을 생성한다.
 
 이러한 자세 컨트롤러들은 쿼드콥터가 안정적인 자세를 유지하고, 원하는 방향으로 기울어지도록 돕는다.
+
+위 2-4의 내용을 적용한 모델이 step2 시뮬링크 모델이 된다.
+
+<center><img width = "100%" src="../../images/uav101/no03_PIDControl/step2model.jpg"><br></center>
+
+이 모델은 표시된 것과 같이 센서로부터 획득한 플랜트(드론)의 상태(좌표, 방향)를 피드백 받고 제어하는 파트들이 추가 되어 있다. 여기서는 이상적인 센서를 가정하여 6DOF 블록에서 나오는 값들을 그대로 되먹임 받는 것으로 되어 있다.
+
+Altitude Control 서브시스템은 간단하게 높이 센서값을 얻어와 PD 제어를 수행한다. 입력으로는 원하는 높이값을 입력 받고 PD 제어기를 통해 나오는 추력값을 출력하게 된다.
+
+<center><img width = "100%" src="../../images/uav101/no03_PIDControl/step2AltitudeControl.jpg"><br></center>
+
+Attitude Control 서브시스템도 크게 다르지 않게 구성되어 있다. 입력으로는 원하는 roll, pitch, yaw 각도값을 입력 받고 PD 제어기를 통해 나오는 부족분을 출력하게 된다.
+
+<center><img width = "100%" src="../../images/uav101/no03_PIDControl/step2AttitudeControl.jpg"><br></center>
+
+여기까지 모아서 원하는 고도는 -10, 원하는 roll, pitch, yaw 값은 0.1, 0.2, 0.3으로 넣어주고 시뮬레이션을 해보면 아래와 같은 결과를 얻게 된다.
+
+<center><img width = "100%" src="../../images/uav101/no03_PIDControl/step2Alt10Attpoint123.jpg"><br></center>
+
+위 그림에서 볼 수 있는 것은 우리가 원하는 고도와 roll, pitch, yaw 값에는 맞게 제어가 진행되고 있다는 점이다. Xe 값의 붉은 선이 고도 (-10)이며 rpy 값이 각각 0.1, 0.2, 0.3 값이 들어간 것을 알 수 있다. 3D Animation으로 보면 아래와 같다.
+
+<center>
+<video width = "100%" loop autoplay muted controls>
+  <source src = "../../images/uav101/no03_PIDControl/step2Alt10Attpoint123.mp4">    
+</video>
+</center>
+
+그런데, 이쯤되면 roll, pitch, yaw를 직접 제어하는 것은 생각보다 어렵고, 최종적으로는 x, y 좌표 어딘가로 드론을 보내는 것에 대해 고려할 필요가 있다는 것을 알 수 있다.
 
 ## 5. X-Y 위치 제어를 위한 회전 행렬: `dx, dy`를 `roll desired, pitch desired`로 변환
 
