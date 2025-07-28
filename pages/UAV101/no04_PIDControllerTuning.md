@@ -233,11 +233,29 @@ X-Y 제어가 재연결된 상태에서 시뮬레이션을 실행했을 때 X, Y
 </video>
 </center>
 
-TODO: 여기부터...
+이는 X-Y 컨트롤러의 출력(롤 및 피치 명령)에 설정된 **포화 한계(saturation limits)** 가 너무 작을 수 있기 때문이다.
 
-이는 X-Y 컨트롤러의 출력(롤 및 피치 명령)에 설정된 \*\*포화 한계(saturation limits)\*\*가 너무 작을 수 있기 때문이다.
+<center><img width = "100%" src="../../images/uav101/no04_PIDControllerTuning/satuarationLimitsRollPitch.jpg"><br></center>
 
   * **포화 한계 조정**: 롤 및 피치 출력의 포화 한계를 점진적으로 증가시키면서 시뮬레이션을 다시 실행한다. 포화 한계를 늘리면 쿼드콥터가 더 큰 기울기 각도를 가질 수 있게 되어, 원하는 위치로 더 빠르게 이동할 수 있지만, 과도하게 늘리면 불안정해질 수도 있다.
+
+saturation limit을 [-0.05, 0.05]에서 [-0.1, 0.1]로 바꿔보면 약간의 변화는 보이더라도 눈에 띄는 차이는 없어 보인다. 
+
+<center><img width = "100%" src="../../images/uav101/no04_PIDControllerTuning/step2RollPitchSaturationTweak.png"><br></center>
+
+이번엔 Roll Pitch 값을 조정하는 PID 제어기를 튜닝해보자면 아래와 같이 튜닝되는 것을 알 수 있다. (정답은 없고, 이정도로 튜닝 되는구나 하는 식으로 튜닝하면 될 것 같다.)
+
+<center><img width = "100%" src="../../images/uav101/no04_PIDControllerTuning/step2RollPitchControllerTuning.jpg"><br></center>
+
+제어기를 튜닝한 후의 시뮬레이션 결과는 다음과 같다.
+
+<center><img width = "100%" src="../../images/uav101/no04_PIDControllerTuning/step2RollPitchControllerTuned.png"><br></center>
+
+<center>
+<video width = "100%" loop autoplay muted controls>
+  <source src = "../../images/uav101/no04_PIDControllerTuning/step2RollPitchControllerTuned.mp4">    
+</video>
+</center>
 
 ## 3\. PID 제어 성능 평가 및 물리적 한계
 
