@@ -5,7 +5,7 @@ sidebar: uav101
 permalink: no00_IntroToUAV.html
 identifier: no00_IntroToUAV
 toc: true
-ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/path_planning/ogimage.jpg
+ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/uav101/ogimage.png
 ---
 
 <style>

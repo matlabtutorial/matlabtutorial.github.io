@@ -5,7 +5,7 @@ sidebar: uav101
 permalink: no04_PIDControllerTuning.html
 identifier: no04_PIDControllerTuning
 toc: true
-ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/path_planning/ogimage.jpg
+ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/uav101/ogimage.png
 ---
 
 <style>
@@ -253,7 +253,7 @@ saturation limit을 [-0.05, 0.05]에서 [-0.1, 0.1]로 바꿔보면 약간의 �
 
 <center>
 <video width = "100%" loop autoplay muted controls>
-  <source src = "../../images/uav101/no04_PIDControllerTuning/step2RollPitchControllerTuned.mp4">    
+  <source src = "../../images/uav101/no04_PIDControllerTuning/step2RollPitchTuned.mp4">    
 </video>
 </center>
 
