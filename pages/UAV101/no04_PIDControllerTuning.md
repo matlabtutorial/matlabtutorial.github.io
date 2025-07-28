@@ -267,6 +267,14 @@ saturation limit을 [-0.05, 0.05]에서 [-0.1, 0.1]로 바꿔보면 약간의 �
 
 이러한 물리적 한계를 모델에 반영하기 위해 쿼드콥터 모델 내의 **"Propeller Speed Limiter"** 기능을 조정한다. 프로펠러 속도 제한을 현실적인 범위로 조정하면 (예: -300에서 300까지를 -10에서 0으로) 초기 속도 피크가 현저히 줄어들고, X, Y, Z 위치에 대한 전체적인 응답이 훨씬 더 부드러워진다.
 
+<center><img width = "100%" src="../../images/uav101/no04_PIDControllerTuning/step3SpeedLimiterTweak.png"><br></center>
+
+<center>
+<video width = "100%" loop autoplay muted controls>
+  <source src = "../../images/uav101/no04_PIDControllerTuning/step3SpeedLimiterTweak.mp4">    
+</video>
+</center>
+
 ### 3.2. 실제 환경 고려 사항
 
 지금까지 모든 튜닝은 상태 데이터가 완벽하게 알려져 있다는 가정 하에 진행되었다. 그러나 실제 구현에서는 측정 오류가 발생할 수 있고, 환경이 정적이지 않을 수 있다(예: 바람). 이러한 모든 요소들은 제어 시스템과 상호 작용하며, PID를 튜닝할 때 성능과 강건성 사이의 트레이드오프를 강요하게 된다.
