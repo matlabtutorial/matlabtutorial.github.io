@@ -141,17 +141,17 @@ Attitude Control 서브시스템도 크게 다르지 않게 구성되어 있다.
 
 ## 5. X-Y 위치 제어를 위한 회전 행렬: `dx, dy`를 `roll desired, pitch desired`로 변환
 
-쿼드콥터가 지구 고정 좌표계(Global Frame)에서 원하는 X-Y 위치로 이동하려면, 현재 자신의 방향(요 각도)에 맞춰서 몸체를 기울여야 한다. 이때 `dx`(지구 고정 X축 방향 움직임 요구량)와 `dy`(지구 고정 Y축 방향 움직임 요구량)를 기체 고정 좌표계(Body Frame)에서의 `roll desired`와 `pitch desired`로 변환하는 과정이 필요하다. 이는 **좌표계 회전 변환**을 통해 이루어진다.
+쿼드콥터가 지구 고정 좌표계(Global Frame)에서 원하는 X-Y 위치로 이동하려면, 현재 자신의 방향(요 각도)에 맞춰서 몸체를 기울여야 한다. 이때 $dx_g$ (지구 고정 X축 방향 움직임 요구량)와 $dy_g$ (지구 고정 Y축 방향 움직임 요구량)를 기체 고정 좌표계(Body Frame)에서의 `roll desired`와 `pitch desired`로 변환하는 과정이 필요하다. 이는 **좌표계 회전 변환**을 통해 이루어진다.
 
-만약 지구 고정 좌표계에서의 원하는 움직임 성분($dx_g$, $dy_g$)이 있고, 쿼드콥터의 현재 요(Yaw) 각도($\theta$)가 있다면, 이를 기체 고정 좌표계에서의 움직임 성분($dx_b$, $dy_b$)으로 변환하는 회전 행렬은 다음과 같다:
+만약 지구 고정 좌표계에서의 원하는 움직임 성분($dx_g$, $dy_g$)이 있고, 쿼드콥터의 현재 요(Yaw) 각도($\phi$)가 있다면, 이를 기체 고정 좌표계에서의 움직임 성분($dx_b$, $dy_b$)으로 변환하는 회전 행렬은 다음과 같다:
 
-$$\begin{pmatrix} dx_b \\ dy_b \end{pmatrix} = \begin{pmatrix} \cos(\theta) & \sin(\theta) \\ -\sin(\theta) & \cos(\theta) \end{pmatrix} \begin{pmatrix} dx_g \\ dy_g \end{pmatrix}$$
+$$\begin{pmatrix} dx_b \\ dy_b \end{pmatrix} = \begin{pmatrix} \cos(\phi) & \sin(\phi) \\ -\sin(\phi) & \cos(\phi) \end{pmatrix} \begin{pmatrix} dx_g \\ dy_g \end{pmatrix}$$
 
 이 식을 풀면 다음과 같다:
-* $dx_b = dx_g \times \cos(\theta) + dy_g \times \sin(\theta)$
-* $dy_b = -dx_g \times \sin(\theta) + dy_g \times \cos(\theta)$
+* $dx_b = dx_g \times \cos(\phi) + dy_g \times \sin(\phi)$
+* $dy_b = -dx_g \times \sin(\phi) + dy_g \times \cos(\phi)$
 
-여기서 `$dx_b$`는 기체의 전후 방향으로의 움직임을 유발하는 기울임(피치)에 주로 사용되고, `$dy_b$`는 기체의 좌우 방향으로의 움직임을 유발하는 기울임(롤)에 주로 사용된다.
+여기서 $dx_b$는 기체의 전후 방향으로의 움직임을 유발하는 기울임(피치)에 주로 사용되고, $dy_b$는 기체의 좌우 방향으로의 움직임을 유발하는 기울임(롤)에 주로 사용된다.
 
 ### `pitch_desired`의 음의 부호에 대한 설명
 
