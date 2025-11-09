@@ -18,7 +18,7 @@ g { color: Green }
 
 해당 포스팅은 아래 영상의 설명을 기반으로 하였으며, Google Gemini의 도움을 받아 작성되었습니다.
 
-<p align = "center"><iframe width="560" height="315" src="https://youtu.be/wkfEZmsQqiA?si=5otUm3SXK2INiSol" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<p align = "center"><iframe width="560" height="315" src="https://www.youtube.com/embed/wkfEZmsQqiA?si=F61Z5KxZbxGeGdvq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
 
 이 포스팅에서 사용된 시뮬링크 모델들은 아래 링크에서 받으실 수 있습니다.
 
@@ -49,7 +49,7 @@ $$\text{오차} = \text{명령} - \text{출력}$$
 
 제어기의 목표는 이 오차를 0으로 수렴하게 만드는 조작량(입력)을 생성하는 것이다. [그림 1]은 이러한 피드백 제어 시스템의 기본적인 구조를 나타내는 블록 다이어그램이다.
 
-<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic1.jpg"/><br></center>
+<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic1.png"/><br></center>
 
 > **[그림 1]** 피드백 제어 시스템의 기본 블록 다이어그램
 
@@ -63,7 +63,7 @@ $$\text{조작량} = K_p \times \text{현재 오차}$$
 
 여기서 $K_p$는 **비례 이득(Proportional Gain)**이며, 오차가 클수록 더 큰 힘을 가해 시스템을 빠르게 목표로 이동시키고, 오차가 작아질수록 힘을 줄여 부드럽게 멈추게 하는 역할을 한다. 마치 축구장 하프라인으로 걸어갈 때, 목표에서 멀수록 빠르게 걷고 가까워질수록 느리게 걷는 것과 유사하다.
 
-<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic2.jpg"/><br></center>
+<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic2.png"/><br></center>
 
 > **[그림 2]** 비례 제어기(P Controller)의 비유: 축구장 왼쪽 끝에서 하프라인까지 걸어가게 만들기
 
@@ -73,13 +73,13 @@ $$\text{조작량} = K_p \times \text{현재 오차}$$
 
 이를 시뮬링크에서 모델로 만들면 아래와 같다. 모델은 [여기](https://github.com/angeloyeo/Quadcopter_Lessons/tree/main/UAV_Quadcopter_Lessons/UAV_03_QuadcopterControl/SimulinkModels/PID_Practice)에서 받을 수 있는 "no1_proportional_controller.slx"라는 모델이다. 이 모델에서 Plant는 actuated input을 계속 누적해서 받으므로 [integrator 블록](https://www.mathworks.com/help/simulink/slref/integrator.html)을 이용했다. 
 
-<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic3.jpg"/><br></center>
+<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic3.png"/><br></center>
 
 > **[그림 3]** 비례 제어기(P Controller)를 포함한 제어 시스템의 블록 다이어그램과 P 제어만으로 구현된 Simulink 모델 
 
-시뮬레이션을 10초간 돌려보면 Walking Speed는 에러가 줄어듦에 따라 함께 줄어들고, Controlled Variable인 이동거리가 50에 점점 수렴하는 것을 알 수 있다.
+시뮬레이션을 50초간 돌려보면 Walking Speed는 에러가 줄어듦에 따라 함께 줄어들고, Controlled Variable인 이동거리가 50에 점점 수렴하는 것을 알 수 있다.
 
-<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic4.jpg"/><br></center>
+<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic4.png"/><br></center>
 
 > **[그림 4]** (왼쪽) 비례 제어기(P Controller)를 포함한 제어 시스템에서 Actuated Signal (Walking Speed)가 갈수록 줄어들고 있다. (오른쪽) Controlled Variable인 이동거리가 명령 변수 50에 가까워지는 것을 알 수 있다.
 
@@ -91,19 +91,19 @@ P 제어는 간단하고 빠르게 반응하지만, 모든 상황에서 완벽�
 
 드론을 50m 고도에 띄우려 할 때, P 제어는 오차가 0이 되는 순간 모터 출력을 멈춘다. 하지만 중력을 이기고 50m 고도를 유지하려면 모터가 계속 돌면서 특정 힘(예: 100RPM)을 내야 한다. P 제어는 오차가 0이 되면 출력을 0으로 만들기 때문에, 드론은 목표보다 낮은 고도(예: 30m)에서 모터 출력이 100RPM이 되어 중력과 균형을 이루고 멈추는 오차가 발생한다. 이것이 정상 상태 오차이다.
 
-<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic5.jpg"/><br></center>
+<center><img width = "30%" src="../../images/PIDControl101/no01_WhatIsPIDControl/pic5.png"/><br></center>
 
-> **[그림 5]** 드론이 계속 떠있기 위해서 100 rpm 이 필요하다고 하면, 이에 의해 지속적으로 오차가 발생한다. 이 그림에서와 같이 P gain의 값이 5라면, 20m의 에러가 발생했을 때 지속적인 오차 (100)를 겨우 상쇄하면서 떠있을 수 있게 된다.
+> **[그림 5]** 드론이 계속 떠있기 위해서 어느정도의 추력(여기서는 100)이 필요하게 되며, 이에 의해 지속적으로 오차가 발생한다. 이 그림에서와 같이 P gain의 값이 5라면, 20 의 에러가 발생했을 때 지속적인 오차 (100)를 겨우 상쇄하면서 떠있을 수 있게 된다.
 
 이 현상을 더 잘 이해하기 위해서 steady-state error가 도입되는 현상을 시뮬링크 모델에서 구현하자면 아래와 같다. 모델은 [여기](https://github.com/angeloyeo/Quadcopter_Lessons/tree/main/UAV_Quadcopter_Lessons/UAV_03_QuadcopterControl/SimulinkModels/PID_Practice)에서 받을 수 있는 "no2_proportional_controller_steady_state_error.slx"라는 모델이다.
 
-<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic6.jpg"/><br></center>
+<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic6.png"/><br></center>
 
 > **[그림 6]** "-100"이라고 적힌 constant block이 steady-state error를 표현하고 있다. Error Term 및 P gain을 거쳐 나오는 actuated signal에 -100이라는 steady-state error 값이 지속적으로 추가되고 있다. 
 
 이 때, Scope 값을 찍어보면 고도는 30으로 계속 유지되는 것을 알 수 있다.
 
-<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic7.jpg"/><br></center>
+<center><img width = "50%" src="../../images/PIDControl101/no01_WhatIsPIDControl/pic7.png"/><br></center>
 
 > **[그림 7]** 그림 6의 steady-state error가 존재하는 상황에서의 고도 변화 시뮬레이션 결과
 
@@ -117,13 +117,13 @@ P 제어와 I 제어를 합친 것을 **PI 제어**라고 한다. PI 제어는 �
 
 이 현상을 시뮬링크 모델에서 구현하자면 아래와 같다. 모델은 [여기](https://github.com/angeloyeo/Quadcopter_Lessons/tree/main/UAV_Quadcopter_Lessons/UAV_03_QuadcopterControl/SimulinkModels/PID_Practice)에서 받을 수 있는 "no3_PI_Controller.slx"라는 모델이다.
 
-<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic8.jpg"/><br></center>
+<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic8.png"/><br></center>
 
 > **[그림 8]** PI 제어기(PI Controller)를 포함한 제어 시스템의 블록 다이어그램과 PI 제어만으로 구현된 Simulink 모델
 
 시뮬레이션 결과를 보면 PI 제어기를 이용하면 steady-state error를 효과적으로 상쇄할 수 있으며, 최종적으로 원하는 50m에 도달하게 되는 것을 알 수 있다.
 
-<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic9.jpg"/><br></center>
+<center><img width = "50%" src="../../images/PIDControl101/no01_WhatIsPIDControl/pic9.png"/><br></center>
 
 > **[그림 9]** PI 제어기(PI Controller)를 포함한 제어 시스템의 시뮬레이션 결과
 
@@ -141,13 +141,13 @@ $$\text{조작량}_\text{D} = K_d \times \frac{d}{dt} (\text{오차})$$
 
 이로써 **PID 제어(Proportional-Integral-Derivative Control)**가 완성된다. PID 제어는 현재(P), 과거(I), 미래(D)의 오차 정보를 모두 사용하여 시스템을 가장 빠르고 안정적이며 정확하게 제어할 수 있는 보편적인 제어 방식이 되는 것이다. 모델은 [여기](https://github.com/angeloyeo/Quadcopter_Lessons/tree/main/UAV_Quadcopter_Lessons/UAV_03_QuadcopterControl/SimulinkModels/PID_Practice)에서 받을 수 있는 "no4_PID_Controller.slx"라는 모델이다.
 
-<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic10.jpg"/><br></center>
+<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic10.png"/><br></center>
 
 > **[그림 10]** 최종적인 PID 제어기(PID Controller)를 포함한 제어 시스템의 블록 다이어그램과 PID 제어로 완성된 Simulink 모델 
 
 시뮬레이션 결과에서도 오버슈팅이 사라지고, 부드럽게 신호가 원하는 고도인 50 으로 값이 바뀌는 것을 알 수 있다.
 
-<center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic11.jpg"/><br></center>
+<center><img width = "50%" src="../../images/PIDControl101/no01_WhatIsPIDControl/pic11.png"/><br></center>
 
 > **[그림 11]** 최종적인 PID 제어기(PID Controller)를 포함한 모델의 시뮬레이션 결과. PI 제어기에서 발생한 오버슈팅이 사라지는 것을 볼 수 있다.
 
