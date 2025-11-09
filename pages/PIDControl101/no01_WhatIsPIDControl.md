@@ -41,7 +41,7 @@ g { color: Green }
 1.  **플랜트 (Plant) 또는 시스템:** 우리가 제어하고자 하는 대상이다. (예: 드론, 모터, 온도 조절기)
 2.  **명령 (Command) 또는 목표값 (Set-point):** 시스템이 도달해야 하는 원하는 값이다. (예: 고도 50m, 온도 25°C)
 3.  **제어 변수(Controlled Variable) 혹은 출력 (Output):** 플랜트의 현재 상태를 나타내는 측정값이다.
-4.  **조작량 (Actuated Signal)** 플랜트를 제어하기 위해 시스템에 가하는 신호이다. (예: 모터 회전 속도)
+4.  **조작량 (Actuating Signal)** 플랜트를 제어하기 위해 시스템에 가하는 신호이다. (예: 모터 회전 속도)
 
 **피드백 제어 (Feedback Control)**의 핵심은 시스템의 **출력**을 다시 **명령**과 비교하여 그 차이를 계산하는 것이다. 이 차이를 **오차(Error)**라고 부른다.
 
@@ -67,11 +67,11 @@ $$\text{조작량} = K_p \times \text{현재 오차}$$
 
 > **[그림 2]** 비례 제어기(P Controller)의 비유: 축구장 왼쪽 끝에서 하프라인까지 걸어가게 만들기
 
-맨 첫 번째 스텝에서는 희망 위치는 50 이지만 현재 위치는 0 이므로, 에러가 50에 이른다. 우리가 집중하고 있는 비례 제어 (Proportional Control)을 이용한다는 것은 그림 1의 Controller에 Gain 블록을 쓰는 것과 같다. 만약, Gain 블록의 값을 0.1이라고 한다면, $Error \times 0.1 = 50 \times 0.1 = 5$ 만큼 actuated signal로 입력을 줄 수 있게 된다. 이를 통해, 그림 2의 사람으로 표시된 "plant"는 5라는 입력만큼 걸어간다. 
+맨 첫 번째 스텝에서는 희망 위치는 50 이지만 현재 위치는 0 이므로, 에러가 50에 이른다. 우리가 집중하고 있는 비례 제어 (Proportional Control)을 이용한다는 것은 그림 1의 Controller에 Gain 블록을 쓰는 것과 같다. 만약, Gain 블록의 값을 0.1이라고 한다면, $Error \times 0.1 = 50 \times 0.1 = 5$ 만큼 actuating signal로 입력을 줄 수 있게 된다. 이를 통해, 그림 2의 사람으로 표시된 "plant"는 5라는 입력만큼 걸어간다. 
 
-이제는 희망 위치가 50이고, 현재 위치는 5가 되므로, 에러가 45가 된다. Gain 값이 0.1이라면 Actuated input은 4.5가 될 것이고, 사람(Plant)은 총 9.5만큼 걸어갔을 것이다. 이와 같이 Proportional Controller는 에러의 크기에 비례해 actuated signal 값을 주면서 plant의 출력값에 의해 발생하는 error가 0이 되도록 한다.
+이제는 희망 위치가 50이고, 현재 위치는 5가 되므로, 에러가 45가 된다. Gain 값이 0.1이라면 actuating input은 4.5가 될 것이고, 사람(Plant)은 총 9.5만큼 걸어갔을 것이다. 이와 같이 Proportional Controller는 에러의 크기에 비례해 actuating signal 값을 주면서 plant의 출력값에 의해 발생하는 error가 0이 되도록 한다.
 
-이를 시뮬링크에서 모델로 만들면 아래와 같다. 모델은 [여기](https://github.com/angeloyeo/Quadcopter_Lessons/tree/main/UAV_Quadcopter_Lessons/UAV_03_QuadcopterControl/SimulinkModels/PID_Practice)에서 받을 수 있는 "no1_proportional_controller.slx"라는 모델이다. 이 모델에서 Plant는 actuated input을 계속 누적해서 받으므로 [integrator 블록](https://www.mathworks.com/help/simulink/slref/integrator.html)을 이용했다. 
+이를 시뮬링크에서 모델로 만들면 아래와 같다. 모델은 [여기](https://github.com/angeloyeo/Quadcopter_Lessons/tree/main/UAV_Quadcopter_Lessons/UAV_03_QuadcopterControl/SimulinkModels/PID_Practice)에서 받을 수 있는 "no1_proportional_controller.slx"라는 모델이다. 이 모델에서 Plant는 actuating input을 계속 누적해서 받으므로 [integrator 블록](https://www.mathworks.com/help/simulink/slref/integrator.html)을 이용했다. 
 
 <center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic3.png"/><br></center>
 
@@ -81,7 +81,7 @@ $$\text{조작량} = K_p \times \text{현재 오차}$$
 
 <center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic4.png"/><br></center>
 
-> **[그림 4]** (왼쪽) 비례 제어기(P Controller)를 포함한 제어 시스템에서 Actuated Signal (Walking Speed)가 갈수록 줄어들고 있다. (오른쪽) Controlled Variable인 이동거리가 명령 변수 50에 가까워지는 것을 알 수 있다.
+> **[그림 4]** (왼쪽) 비례 제어기(P Controller)를 포함한 제어 시스템에서 Actuating Signal (Walking Speed)가 갈수록 줄어들고 있다. (오른쪽) Controlled Variable인 이동거리가 명령 변수 50에 가까워지는 것을 알 수 있다.
 
 ---
 
@@ -99,7 +99,7 @@ P 제어는 간단하고 빠르게 반응하지만, 모든 상황에서 완벽�
 
 <center><img src="../../images/PIDControl101/no01_WhatIsPIDControl/pic6.png"/><br></center>
 
-> **[그림 6]** "-100"이라고 적힌 constant block이 steady-state error를 표현하고 있다. Error Term 및 P gain을 거쳐 나오는 actuated signal에 -100이라는 steady-state error 값이 지속적으로 추가되고 있다. 
+> **[그림 6]** "-100"이라고 적힌 constant block이 steady-state error를 표현하고 있다. Error Term 및 P gain을 거쳐 나오는 actuating signal에 -100이라는 steady-state error 값이 지속적으로 추가되고 있다. 
 
 이 때, Scope 값을 찍어보면 고도는 30으로 계속 유지되는 것을 알 수 있다.
 
