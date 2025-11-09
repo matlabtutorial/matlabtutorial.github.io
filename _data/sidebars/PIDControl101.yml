@@ -1,0 +1,32 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: PID Control 101
+  version:
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: PID Control 101
+    output: web, pdf
+    folderitems:
+    - title: 1. PID 제어기란 무엇인가?
+      url: /no01_WhatIsPIDControl.html
+      output: web, pdf
+      type: homepage
+
+
+      
+# Copyright by Angelo Yeo
