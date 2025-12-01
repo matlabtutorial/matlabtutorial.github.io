@@ -10,6 +10,11 @@ toc: true
 ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.io/main/images/blog_posts/2025-11-21-MLCopilot_Creating_Problems/ogimage.png
 ---
 
+본 포스팅은 아래 필자가 MATLAB Community Blog에 투고한 일본어 포스팅의 한국어 버전입니다.
+
+👉[MATLAB Copilotに相談しながら工学問題を設計してみた](https://blogs.mathworks.com/japan-community/2025/11/28/creating-engineering-problems-with-matlab-copilot/?from=kr)
+
+
 안녕하세요. 매스웍스의 여동훈입니다. 저는 대학교 교수님들, 연구원 분들, 학생분들이 수업과 연구에서 MATLAB, Simulink를 잘 쓸 수 있게 기술적으로 지원하는 업무를 담당하고 있습니다. 오늘은 수업의 평가 과정에서 교육자분들이 도움 받을 수 있을만한 내용을 소개해드리고자 합니다. 특히, 최근 교육 분야에서 실질적인 도구로 자리매김하고 있는 생성형 AI를 이용하여 MATLAB 코드를 활용한 공학 문제를 설계하는 방법을 알아보도록 하겠습니다.
 
 # 평가를 위한 문제나 과제를 만드는 과정의 어려움
