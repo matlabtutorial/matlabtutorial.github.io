@@ -152,11 +152,11 @@ Simscape Multibody는 이러한 과정을 자동화해, **수식보다 구조와
 STEP, STL과 같은 CAD 파일을 불러와 실제 형상을 기반으로 모델을 구성할 수 있다.  
 이를 통해 설계 단계에서 기구 간 간섭, 운동 범위, 배치 문제를 조기에 확인할 수 있다.
 
-<video width = "100%" loop autoplay muted controls>
+<video width = "50%" loop autoplay muted controls>
   <source src = "../../images/Multibody101/no00_IntroToSimscapeMultibody/vid15.mp4">    
 </video> 
 
-<video width = "100%" loop autoplay muted controls>
+<video width = "50%" loop autoplay muted controls>
   <source src = "../../images/Multibody101/no00_IntroToSimscapeMultibody/vid16.mp4">    
 </video> 
 

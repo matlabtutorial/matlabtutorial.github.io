@@ -26,6 +26,10 @@ entries:
       url: /no00_IntroToSimscapeMultibody.html
       output: web, pdf
       type: homepage
+    - title: 1. Mass Spring Damper 시스템 모델링 & 시뮬레이션
+      url: /no01_Mass_Spring_Damper_Modeling.html
+      output: web, pdf
+      type: homepage
 
 
       
