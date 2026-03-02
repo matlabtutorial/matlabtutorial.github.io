@@ -1,0 +1,32 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Multibody101
+  version:
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Multibody101
+    output: web, pdf
+    folderitems:
+    - title: 0. Simscape Multibody 소개 - 3D 기계 시스템 모델링 & 시뮬레이션
+      url: /no00_IntroToSimscapeMultibody.html
+      output: web, pdf
+      type: homepage
+
+
+      
+# Copyright by Angelo Yeo

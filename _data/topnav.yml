@@ -34,6 +34,8 @@ topnav_dropdowns:
           url: /1. what_is_path_planning.html
         - title: UAV 101
           url: /no00_IntroToUAV.html
+        - title: Multibody 101
+          url: /no00_IntroToSimscapeMultibody.html
         - title: PID Control 101
           url: /no01_WhatIsPIDControl.html
 # - title: Q&A
