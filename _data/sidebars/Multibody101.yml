@@ -30,6 +30,10 @@ entries:
       url: /no01_Mass_Spring_Damper_Modeling.html
       output: web, pdf
       type: homepage
+    - title: 2. Pendulum 모델링
+      url: /no02_Pendulum_Modeling.html
+      output: web, pdf
+      type: homepage
 
 
       
