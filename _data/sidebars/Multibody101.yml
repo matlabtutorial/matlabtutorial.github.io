@@ -34,6 +34,11 @@ entries:
       url: /no02_Pendulum_Modeling.html
       output: web, pdf
       type: homepage
+    - title: 3. Manipulator 모델링
+      url: /no03_Manipulator_Modeling.html
+      output: web, pdf
+      type: homepage
+
 
 
       
