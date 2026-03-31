@@ -1,7 +1,7 @@
 ---
 title: 쿼드콥터 모델 설계
 published: true
-sidebar: uav101
+sidebar: aerospace
 permalink: no02_quadcopters.html
 identifier: no02_quadcopters
 toc: true

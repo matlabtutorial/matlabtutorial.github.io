@@ -1,0 +1,56 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Aerospace Engineering
+  version:
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: 낙하산 시뮬레이션
+    output: web, pdf
+    folderitems:
+    - title: 하늘에서 떨어뜨린 패키지가 어디에 떨어질지 미리 알 수 있을까?
+      url: /no01_parachute_simulation_with_monte_carlo.html
+      output: web, pdf
+      type: homepage
+
+  - title: 쿼드콥터 모델링 및 제어기 설계
+    output: web, pdf
+    folderitems:
+    - title: 0. UAV 시뮬레이션의 큰 그림 - 에어프레임 모델부터 제어까지
+      url: /no00_IntroToUAV.html
+      output: web, pdf
+      type: homepage
+    - title: 1. Simulink로 에어프레임 모델 구축하기
+      url: /no01_Airframe.html
+      output: web, pdf
+      type: homepage
+    - title: 2. 쿼드콥터 모델 설계
+      url: /no02_quadcopters.html
+      output: web, pdf
+      type: homepage
+    - title: 3. PID를 이용한 쿼드콥터 제어
+      url: /no03_PIDControl.html
+      output: web, pdf
+      type: homepage
+    - title: 4. PID 제어기 튜닝
+      url: /no04_PIDControllerTuning.html
+      output: web, pdf
+      type: homepage
+
+
+      
+# Copyright by Angelo Yeo

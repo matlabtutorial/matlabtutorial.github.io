@@ -32,7 +32,7 @@ topnav_dropdowns:
           url: /1. introduction_to_MATLAB_with_Python.html
         - title: Path Planning for Mobile Robot
           url: /1. what_is_path_planning.html
-        - title: UAV 101
+        - title: Aerospace Engineering
           url: /no00_IntroToUAV.html
         - title: Multibody 101
           url: /no00_IntroToSimscapeMultibody.html

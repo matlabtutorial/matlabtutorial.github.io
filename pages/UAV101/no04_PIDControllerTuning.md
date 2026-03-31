@@ -1,7 +1,7 @@
 ---
 title: PID 제어기 튜닝
 published: true
-sidebar: uav101
+sidebar: aerospace
 permalink: no04_PIDControllerTuning.html
 identifier: no04_PIDControllerTuning
 toc: true

@@ -1,7 +1,7 @@
 ---
 title: PID를 이용한 쿼드콥터 제어
 published: true
-sidebar: uav101
+sidebar: aerospace
 permalink: no03_PIDControl.html
 identifier: no03_PIDControl
 toc: true

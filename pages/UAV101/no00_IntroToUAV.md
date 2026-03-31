@@ -1,7 +1,7 @@
 ---
 title: UAV 시뮬레이션의 큰 그림 - 에어프레임 모델부터 제어까지
 published: true
-sidebar: uav101
+sidebar: aerospace
 permalink: no00_IntroToUAV.html
 identifier: no00_IntroToUAV
 toc: true

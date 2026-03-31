@@ -151,9 +151,9 @@ ogimage: https://raw.githubusercontent.com/matlabtutorial/matlabtutorial.github.
       <span>🚁</span>
     </div>
     <div class="tutorial-card-body">
-      <span class="tutorial-card-tag">UAV</span>
-      <p class="tutorial-card-title">UAV 101</p>
-      <p class="tutorial-card-desc">쿼드콥터 드론의 동역학 모델링부터 제어 설계까지. Simulink를 활용해 UAV 비행 시뮬레이션을 처음부터 구성합니다.</p>
+      <span class="tutorial-card-tag">Aerospace</span>
+      <p class="tutorial-card-title">Aerospace Engineering</p>
+      <p class="tutorial-card-desc">낙하산의 착륙 위치 계산, 쿼드콥터 드론의 동역학 모델링부터 제어 설계까지. Simulink를 활용해 우주항공 시뮬레이션을 처음부터 구성합니다.</p>
     </div>
   </a>
 

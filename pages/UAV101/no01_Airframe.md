@@ -1,7 +1,7 @@
 ---
 title: Simulink로 에어프레임 모델 구축하기
 published: true
-sidebar: uav101
+sidebar: aerospace
 permalink: no01_Airframe.html
 identifier: no01_Airframe
 toc: true
