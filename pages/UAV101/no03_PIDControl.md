@@ -25,7 +25,7 @@ g { color: Green }
 
 추가로, 영상에서 나오는 모델들을 step by step으로 구성한 Simulink 모델들은 여기서 받을 수 있습니다. (step1~step3)
 
-👉[**Simulink Model 받으러 가기**](https://github.com/angeloyeo/Quadcopter_Lessons/tree/main/UAV_Quadcopter_Lessons/UAV_03_QuadcopterControl/SimulinkModels){:target="_blank"}
+👉[**Simulink Model 받으러 가기**](https://github.com/angeloyeo/Quadcopter_Lessons/tree/main/UAV_03_QuadcopterControl){:target="_blank"}
 
 # 쿼드콥터의 두뇌 만들기: 시뮬링크로 배우는 제어 시스템과 비행 원리
 
@@ -46,31 +46,30 @@ step1 시뮬링크 모델은 아래와 같다. step1에서는 빨간색으로 �
 여기서 `Motor Mixing Matrix`는 다음과 같다:
 
 $$0.5 \times \begin{pmatrix} 
-  1 & 1 & -1 & -1 \\ 
-  1 & -1 & -1 & 1 \\ 
-  1 & -1 & 1 & -1 \\ 
-  1 & 1 & 1 & 1 
+  1 & -1 & -1 & -1 \\ 
+  1 & 1 & -1 & 1 \\ 
+  1 & 1 & 1 & -1 \\ 
+  1 & -1 & 1 & 1 
 \end{pmatrix}$$
 
-이 행렬은 비행 제어기에서 출력되는 상위 수준의 제어 명령(총 추력, 롤, 피치, 요)을 **각각의 4개 프로펠러가 내야 할 개별적인 속도 명령으로 변환**해주는 핵심적인 변환기이다.
+이 행렬은 비행 제어기에서 출력되는 상위 수준의 제어 명령(총 Fz, 롤, 피치, 요)을 **각각의 4개 프로펠러가 내야 할 개별적인 속도 명령으로 변환**해주는 핵심적인 변환기이다. 여기서 Fz는 추력과 비슷한 의미로, 음의 값의 Fz가 하늘 방향 추력을 나타내게 된다.
 
 <center><img width = "100%" src="../../images/uav101/no03_PIDControl/pic1.png"><br></center>
 
-
 행렬의 각 열은 제어 입력에 대응하고, 각 행은 4개의 프로펠러에 대응한다. 표준적인 쿼드콥터 (X-형태 배치)의 물리적 특성과 각 프로펠러의 회전 방향을 고려하여 설계된다.
 
-* **첫 번째 열 (`[1, 1, 1, 1]`) (총 추력)**: 모든 프로펠러가 동일하게 총 추력 명령에 기여하여 고도를 제어한다.
-* **두 번째 열 (`[1, -1, -1, 1]`) (롤)**: 롤 명령이 들어오면, 좌우 프로펠러들의 추력을 차등 조절하여 기체를 좌우로 기울인다. (예: 오른쪽 롤을 위해 P2, P3 감소, P1, P4 증가)
+* **첫 번째 열 (`[1, 1, 1, 1]`) (총 Fz)**: 모든 프로펠러가 동일하게 총 Fz 명령에 기여하여 고도를 제어한다.
+* **두 번째 열 (`[-1, 1, 1, -1]`) (롤)**: 롤 명령이 들어오면, 좌우 프로펠러들의 추력을 차등 조절하여 기체를 좌우로 기울인다. (예: 오른쪽 롤을 위해 P2, P3 감소, P1, P4 증가)
 * **세 번째 열 (`[-1, -1, 1, 1]`) (피치)**: 피치 명령이 들어오면, 앞뒤 프로펠러들의 추력을 차등 조절하여 기체를 앞뒤로 기울인다. (예: 전방 피치를 위해 P3, P4 증가, P1, P2 감소)
 * **네 번째 열 (`[-1, 1, -1, 1]`) (요)**: 요 명령이 들어오면, 프로펠러들의 속도를 조절하여 반작용 토크의 균형을 깨뜨려 기체를 회전시킨다. (예: 시계 방향 요를 위해 P2, P4 증가, P1, P3 감소)
 
 행렬 앞의 `0.5`와 같은 스케일링 계수는 전체적인 스케일링 계수이며, 입력 명령의 범위나 물리적 계수(프로펠러 효율, 모터 특성 등)에 맞춰 값을 조정하는 역할을 한다. 
 
-조금 다른 관점으로 보면 사람이 넣어주고 싶은 입력은 [추력, 롤, 피치, 요] 값을 [1, 0, 0, 0]으로 주고 싶다고 생각해보자. 그럼, 각 모터의 값은 어떻게 입력되어야 할까? 아래 그림에서 보는 것 처럼 각 모터들이 0.5 만큼의 커맨드를 받으면 된다.
+조금 다른 관점으로 보면 사람이 넣어주고 싶은 입력은 [Fz, 롤, 피치, 요] 값을 [-10, 0, 0, 0]으로 주고 싶다고 생각해보자. 그럼, 각 모터의 값은 어떻게 입력되어야 할까? 아래 그림에서 보는 것 처럼 각 모터들이 0.5 만큼의 커맨드를 받으면 된다.
 
 <center><img width = "100%" src="../../images/uav101/no03_PIDControl/pic2.png"><br></center>
 
-만약, 사람이 넣어주고 싶은 입력이 [추력, 롤, 피치, 요] 값을 [0, 1, 0, 0]으로 주고 싶다고 생각해보자. 그럼 각 모터의 출력은 아래와 같아야 할 것이다.
+만약, 사람이 넣어주고 싶은 입력이 [추력, 롤, 피치, 요] 값을 [-10, 1, 0, 0]으로 주고 싶다고 생각해보자. 그럼 각 모터의 출력은 아래와 같아야 할 것이다.
 
 <center><img width = "100%" src="../../images/uav101/no03_PIDControl/pic3.png"><br></center>
 
@@ -184,7 +183,7 @@ $$\begin{pmatrix}
 
 <center><img width = "30%" src="../../images/uav101/no03_PIDControl/pic4.png"><br></center>
 
-위 그림과 같은 상황에서 현재 위치와 목표 위치의 차이 벡터를 구하면 아래와 같다. 참고로 우리는 드론의 등이 아니라 바닥을 보고 있는 상황이다.
+위 그림과 같은 상황에서 현재 위치와 목표 위치의 차이 벡터를 구하면 아래와 같다.
 
 $$\begin{pmatrix}   dx \\ dy \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} - \begin{pmatrix} 0 \\ 0 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$$
 
@@ -201,7 +200,7 @@ $$=\begin{pmatrix} \cos(\psi) \\ -\sin(\psi) \end{pmatrix} = \begin{pmatrix} 1 \
 
 <center><img width = "30%" src="../../images/uav101/no03_PIDControl/pic5.png"><br></center>
 
-위 그림과 같은 상황에서 현재 위치와 목표 위치의 차이 벡터를 구하면 아래와 같다. 참고로 우리는 드론의 등이 아니라 바닥을 보고 있는 상황이다.
+위 그림과 같은 상황에서 현재 위치와 목표 위치의 차이 벡터를 구하면 아래와 같다. 
 
 $$\begin{pmatrix}   dx \\ dy \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} - \begin{pmatrix} 0 \\ 0 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$$
 
@@ -212,13 +211,13 @@ $$  \begin{pmatrix} \cos(\psi) & \sin(\psi) \\ -\sin(\psi) & \cos(\psi)\end{pmat
 
 $$=\begin{pmatrix} \cos(\psi) \\ -\sin(\psi) \end{pmatrix} = \begin{pmatrix} 0 \\ -1 \end{pmatrix}$$
 
-즉, pitch를 보정하기 위한 값은 0, roll을 보정하기 위한 값은 -1이 된다. 따라서 드론은 왼쪽으로 나아가게 된다. 우리는 드론의 등이 아니라 바닥을 보고 있으므로, 목표를 향해 나간다고 해석할 수 있다.
+즉, pitch를 보정하기 위한 값은 0, roll을 보정하기 위한 값은 -1이 된다. 따라서 드론은 왼쪽으로 나아가게 된다. 
 
 ### 예제 3. 현재 위치 (1, 1), 목표 위치 (4, 3), 현재 Yaw = atan(2/3) (rad)
 
 <center><img width = "30%" src="../../images/uav101/no03_PIDControl/pic6.png"><br></center>
 
-위 그림과 같은 상황에서 현재 위치와 목표 위치의 차이 벡터를 구하면 아래와 같다. 참고로 우리는 드론의 등이 아니라 바닥을 보고 있는 상황이다.
+위 그림과 같은 상황에서 현재 위치와 목표 위치의 차이 벡터를 구하면 아래와 같다.
 
 $$\begin{pmatrix}   dx \\ dy \end{pmatrix} = \begin{pmatrix} 4 \\ 3 \end{pmatrix} - \begin{pmatrix} 1 \\ 1 \end{pmatrix}=\begin{pmatrix} 3 \\ 2 \end{pmatrix}$$
 

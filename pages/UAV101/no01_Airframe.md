@@ -117,7 +117,7 @@ Simulink 모델을 구축하는 데 필요한 몇 가지 핵심 블록들이 있
 
 영상에 나오는 순서대로 모델을 그려나가보자면 아래와 같습니다. 세 단계의 모델로 구성되어 있으며 모델들은 아래 링크에서 받을 수 있습니다.
 
-👉[**Simulink Model 받으러 가기**](https://github.com/angeloyeo/Quadcopter_Lessons/tree/main/UAV_Quadcopter_Lessons/UAV_01_AirFrame/SimulinkModels/ModelsInVideo){:target="_blank"}
+👉[**Simulink Model 받으러 가기**](https://github.com/angeloyeo/Quadcopter_Lessons/tree/main/UAV_01_AirFrame){:target="_blank"}
 
 <center><img src="../../images/uav101/no01_Airframe/step1.jpg"/><br></center>
 
